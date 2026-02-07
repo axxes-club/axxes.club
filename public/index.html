@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axxes Club | Event Partner Program</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="/" class="wordmark">AXXES</a>
+            <div class="nav-links">
+                <a href="https://afters.am" class="nav-link">Platform</a>
+                <a href="#apply" class="nav-link">Apply</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="overline">Partner Program</p>
+                <h1>Scale your events.<br>Keep your margins.</h1>
+                <p class="hero-sub">One platform for ticketing, merch, payroll, and payouts. The lowest transaction fees in the industry.</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <span class="feature-number">01</span>
+                <h3>Ticketing</h3>
+                <p>White-label box office. Your brand, your data, your customers.</p>
+            </div>
+            <div class="feature">
+                <span class="feature-number">02</span>
+                <h3>Merch</h3>
+                <p>Integrated merchandise sales. Pre-event and at the door.</p>
+            </div>
+            <div class="feature">
+                <span class="feature-number">03</span>
+                <h3>Staff</h3>
+                <p>Schedule, manage, and pay your team from one dashboard.</p>
+            </div>
+            <div class="feature">
+                <span class="feature-number">04</span>
+                <h3>Payouts</h3>
+                <p>Talent and vendor payments. Next-day settlement available.</p>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat">
+                <span class="stat-number">2.9%</span>
+                <span class="stat-label">Transaction fee</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-number">24hr</span>
+                <span class="stat-label">Payout speed</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-number">$0</span>
+                <span class="stat-label">Platform fee</span>
+            </div>
+        </section>
+
+        <section class="apply" id="apply">
+            <div class="apply-container">
+                <div class="apply-header">
+                    <h2>Apply for early access</h2>
+                    <p>We're onboarding select partners for our 2024 rollout.</p>
+                </div>
+
+                <form id="application-form" class="application-form">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required autocomplete="name">
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="invite-code">Partner Code</label>
+                        <input type="text" id="invite-code" name="invite_code" required autocomplete="off">
+                        <span class="field-note">Received from an existing partner or our team</span>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Submit Application</span>
+                        <span class="btn-loading"></span>
+                    </button>
+                </form>
+
+                <div id="success-state" class="success-state">
+                    <p class="success-msg">Application received. We'll be in touch within 48 hours.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="wordmark">AXXES</span>
+                <span class="footer-tagline">A division of afters</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://afters.am">afters.am</a>
+                <a href="mailto:partners@afters.am">partners@afters.am</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
