@@ -154,6 +154,8 @@ nav {
 /* Features Alt Row */
 .features-alt {
     border-top: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .features-alt .feature {
@@ -426,6 +428,9 @@ footer {
 @media (max-width: 900px) {
     .features {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .features-alt {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .feature:nth-child(even) {
