@@ -510,3 +510,40 @@ footer {
         gap: 0.5rem;
     }
 }
+
+/* Button Styles */
+.btn-login {
+    font-weight: 500;
+}
+
+.btn-register {
+    background: var(--cream);
+    color: var(--black) !important;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.btn-register:hover {
+    opacity: 0.9;
+}
+
+.hero-cta {
+    margin-top: 3rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: var(--cream);
+    color: var(--black);
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
