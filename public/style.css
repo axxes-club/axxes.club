@@ -155,7 +155,15 @@ nav {
 .features-alt {
     border-top: none;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.features-alt .feature:nth-child(4n) {
+    border-right: none;
+}
+
+.features-alt .feature:nth-child(-n+4) {
+    border-bottom: 1px solid var(--border);
 }
 
 .features-alt .feature {
@@ -430,7 +438,16 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
     .features-alt {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-alt .feature:nth-child(-n+6) {
+        border-bottom: 1px solid var(--border);
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
     }
 
     .feature:nth-child(even) {
@@ -447,10 +464,6 @@ footer {
         border-bottom: none;
     }
 
-    .features-alt .feature:nth-child(1),
-    .features-alt .feature:nth-child(2) {
-        border-bottom: 1px solid var(--border);
-    }
 }
 
 @media (max-width: 600px) {
@@ -489,6 +502,10 @@ footer {
 
     .integration {
         padding: 4rem 1.5rem;
+    }
+
+    .pricing {
+        padding: 5rem 1.5rem;
     }
 
     .form-row {
@@ -546,4 +563,119 @@ footer {
 
 .btn-primary:hover {
     opacity: 0.9;
+}
+
+.btn-outline {
+    display: inline-block;
+    border: 1px solid var(--border-strong);
+    color: var(--cream);
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: border-color 0.2s;
+}
+
+.btn-outline:hover {
+    border-color: var(--cream);
+}
+
+/* Pricing */
+.pricing {
+    padding: 8rem 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.pricing-header h2 {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+}
+
+.pricing-header p:last-child {
+    color: var(--warm-gray);
+}
+
+.pricing-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.plan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--black-light);
+}
+
+.plan-featured {
+    border-color: var(--cream);
+}
+
+.plan-badge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--cream);
+    color: var(--black);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.plan h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.plan-price {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+}
+
+.plan-price span {
+    font-size: 1rem;
+    color: var(--warm-gray);
+}
+
+.plan-sub {
+    font-size: 0.875rem;
+    color: var(--warm-gray);
+    margin-bottom: 2rem;
+}
+
+.plan ul {
+    list-style: none;
+    flex: 1;
+    margin-bottom: 2.5rem;
+}
+
+.plan li {
+    font-size: 0.875rem;
+    padding: 0.625rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.plan .btn-primary,
+.plan .btn-outline {
+    text-align: center;
 }
