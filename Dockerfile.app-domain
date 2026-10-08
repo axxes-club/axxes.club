@@ -1,0 +1,3 @@
+# Overlay only the App public pages; preserve the existing entertainment runtime.
+FROM us-west1-docker.pkg.dev/gravy-meta/ci-axxes-club/axxes-club@sha256:ef273aaa83a641c7669cb45230c79c8fd979757cade4c735d39565c56aaf850c
+COPY --chown=node:node public/app.html public/app-products.html /app/public/
