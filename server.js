@@ -3,7 +3,7 @@ const express = require('express');
 const { Pool } = require('pg');
 const cors = require('cors');
 const path = require('path');
-const {consume,clientIp} = require('./security.cjs');
+const {consumeBudgets,clientIp} = require('./security.cjs');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // API: Register for beta
 app.post('/api/register', async (req, res) => {
-    try { await consume(pool, 'register:global', 120); await consume(pool, 'register:ip:'+clientIp(req.headers), 5); } catch(e) { return res.status(e.status||503).json({error:'Registration temporarily unavailable'}); }
+    try { await consumeBudgets(pool, [['register:global',120],['register:ip:'+clientIp(req.headers),5]]); } catch(e) { return res.status(e.status||503).json({error:'Registration temporarily unavailable'}); }
     const { invite_code, name, email } = req.body || {};
     if (![invite_code,name,email].every(v=>typeof v==='string') || invite_code.length>100 || name.length>200 || email.length>254) return res.status(400).json({error:'Invalid registration'});
 
@@ -118,7 +118,7 @@ app.post('/api/register', async (req, res) => {
 
 // API: Check invite code validity (optional - for real-time validation)
 app.get('/api/check-code/:code', async (req, res) => {
-    try { await consume(pool,'check:global',240); await consume(pool,'check:ip:'+clientIp(req.headers),20); } catch(e) { return res.status(e.status||503).json({error:'Code checks temporarily unavailable'}); }
+    try { await consumeBudgets(pool,[['check:global',240],['check:ip:'+clientIp(req.headers),20]]); } catch(e) { return res.status(e.status||503).json({error:'Code checks temporarily unavailable'}); }
     const { code } = req.params;
 
     try {

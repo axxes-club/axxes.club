@@ -16,4 +16,5 @@ async function consume(query,identity,limit=120,seconds=60,cost=1,table='landing
  if(result.rows.length!==1)throw new AdmissionError();
 }
 
-module.exports={consume: (pool,identity,limit)=>consume((sql,args)=>pool.query(sql,args),identity,limit),clientIp};
+async function consumeBudgets(pool,policies){const client=await pool.connect();try{await client.query('BEGIN');for(const [identity,limit] of policies)await consume((sql,args)=>client.query(sql,args),identity,limit);await client.query('COMMIT')}catch(error){try{await client.query('ROLLBACK')}catch{}throw error}finally{client.release()}}
+module.exports={consume: (pool,identity,limit)=>consume((sql,args)=>pool.query(sql,args),identity,limit),consumeBudgets,clientIp};
