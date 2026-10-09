@@ -45,15 +45,6 @@
     "url": "https://nexus.axxes.club"
   },
   {
-    "name": "AXXES Mail & Workspace",
-    "group": "Work & collaboration",
-    "kind": "Product",
-    "status": "In development",
-    "description": "A connected foundation for mail, calendars and contacts.",
-    "outcome": "Bring correspondence, schedules and people into your workspace.",
-    "url": null
-  },
-  {
     "name": "Atelier",
     "group": "Create & manage",
     "kind": "Product",
@@ -72,15 +63,6 @@
     "url": "https://vitrine.axxes.app"
   },
   {
-    "name": "Matter",
-    "group": "Create & manage",
-    "kind": "Product",
-    "status": "Beta",
-    "description": "Shared client matters with documents, dates, people and acknowledgements.",
-    "outcome": "Keep a firm and its client working from the same case record.",
-    "url": "https://matter.axxes.app"
-  },
-  {
     "name": "Pulse",
     "group": "Create & manage",
     "kind": "Product",
@@ -90,40 +72,13 @@
     "url": "https://pulse.axxes.app"
   },
   {
-    "name": "Payments",
-    "group": "Payments & services",
+    "name": "Tollbooth",
+    "group": "Payments",
     "kind": "Product",
     "status": "Beta",
-    "description": "Payment collection for your own customers, powered by Tollbooth.",
+    "description": "Payment collection for your own customers: links, checkout and payouts.",
     "outcome": "Build a payment flow for your business; merchant activation requires onboarding.",
     "url": "https://tollbooth.axxes.club"
-  },
-  {
-    "name": "AXXES Payments",
-    "group": "Payments & services",
-    "kind": "Service",
-    "status": "Available",
-    "description": "The central checkout for purchasing AXXES products and services.",
-    "outcome": "Pay an AXXES order through a checkout built for that purchase.",
-    "url": "https://payments.axxes.app"
-  },
-  {
-    "name": "Binnacle",
-    "group": "Payments & services",
-    "kind": "Product",
-    "status": "In development",
-    "description": "A planned home for support tickets, conversations and service follow-through.",
-    "outcome": "Give customer requests a clear owner and a traceable history.",
-    "url": null
-  },
-  {
-    "name": "AXXES Cloud",
-    "group": "Develop & build",
-    "kind": "Service",
-    "status": "Available",
-    "description": "An infrastructure console for AXXES environments. Public self-service hosting is still being developed.",
-    "outcome": "See the infrastructure behind your AXXES environment.",
-    "url": "https://cloud.axxes.app"
   },
   {
     "name": "AXXES.dev",
@@ -142,15 +97,6 @@
     "description": "The service gateway behind AXXES integrations. Explore it through the developer platform.",
     "outcome": "Build an integration around documented AXXES capabilities.",
     "url": "https://axxes.dev"
-  },
-  {
-    "name": "Keel",
-    "group": "Develop & build",
-    "kind": "Product",
-    "status": "In development",
-    "description": "A planned source-control home for code and development work.",
-    "outcome": "Keep a project\u2019s code and its history together.",
-    "url": null
   },
   {
     "name": "afters.am",
@@ -178,14 +124,5 @@
     "description": "A booking product for rooms and spaces.",
     "outcome": "Make a space discoverable and organize its bookings.",
     "url": "https://qortr.app"
-  },
-  {
-    "name": "Krates",
-    "group": "Custom & operations",
-    "kind": "Custom solution",
-    "status": "Custom",
-    "description": "A tailored materials-request and inventory workflow, built for an organization\u2019s operations.",
-    "outcome": "Adapt stock and request flows to the way an organization actually works.",
-    "url": null
   }
 ]

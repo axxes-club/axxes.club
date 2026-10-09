@@ -9,7 +9,7 @@ steps:
       - '-ec'
       - |
         docker run -d --name app-domain-check us-west1-docker.pkg.dev/$PROJECT_ID/ci-axxes-club/axxes-club:app-domain-$BUILD_ID
-        docker exec app-domain-check node -e 'setTimeout(async()=>{for(const [path,expected] of [["/app.html","AXXES.app — One account"],["/app-products.html","Products, services & brands"],["/","Operating System for the Entertainment Industry"]]){const r=await fetch("http://127.0.0.1:8080"+path);const body=await r.text();if(r.status!==200||!body.includes(expected))throw new Error("Homepage check failed: "+path);if(path==="/app.html"&&/href="https:\/\/(?:members\.)?axxes\.club(?:\/|")/.test(body))throw new Error("App homepage links to Club")}console.log("Native App homepage and existing Club homepage both passed")},1000)'
+        docker exec app-domain-check node -e 'setTimeout(async()=>{for(const [path,expected] of [["/app.html","AXXES — Everything reconciles"],["/app-products.html","Products, services & brands"],["/","Operating System for the Entertainment Industry"]]){const r=await fetch("http://127.0.0.1:8080"+path);const body=await r.text();if(r.status!==200||!body.includes(expected))throw new Error("Homepage check failed: "+path);if(path==="/app.html"&&/href="https:\/\/(?:members\.)?axxes\.club(?:\/|")/.test(body))throw new Error("App homepage links to Club")}console.log("Native App homepage and existing Club homepage both passed")},1000)'
         docker rm -f app-domain-check
 images:
   - 'us-west1-docker.pkg.dev/$PROJECT_ID/ci-axxes-club/axxes-club:app-domain-$BUILD_ID'
