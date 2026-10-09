@@ -4,6 +4,7 @@ const { Pool } = require('pg');
 const cors = require('cors');
 const path = require('path');
 const {consumeBudgets,clientIp} = require('./security.cjs');
+const { mountAppSite } = require('./app-site.cjs');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -19,6 +20,7 @@ const pool = new Pool({
 // Middleware
 app.use(cors());
 app.use(express.json());
+mountAppSite(app, path.join(__dirname, 'public'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // API: Register for beta

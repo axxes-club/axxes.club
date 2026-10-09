@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url><loc>https://axxes.app/</loc><lastmod>2026-10-09</lastmod><image:image><image:loc>https://axxes.app/assets/og/home.png</image:loc></image:image></url>
+  <url><loc>https://axxes.app/products</loc><lastmod>2026-10-09</lastmod><image:image><image:loc>https://axxes.app/assets/og/products.png</image:loc></image:image></url>
+  <url><loc>https://axxes.app/products/axxes-work</loc><lastmod>2026-10-09</lastmod><image:image><image:loc>https://axxes.app/assets/og/axxes-work.png</image:loc></image:image></url>
+  <url><loc>https://axxes.app/products/folders</loc><lastmod>2026-10-09</lastmod><image:image><image:loc>https://axxes.app/assets/og/folders.png</image:loc></image:image></url>
+  <url><loc>https://axxes.app/products/lanes</loc><lastmod>2026-10-09</lastmod><image:image><image:loc>https://axxes.app/assets/og/lanes.png</image:loc></image:image></url>
+  <url><loc>https://axxes.app/products/relay</loc><lastmod>2026-10-09</lastmod><image:image><image:loc>https://axxes.app/assets/og/relay.png</image:loc></image:image></url>
+  <url><loc>https://axxes.app/products/nexus</loc><lastmod>2026-10-09</lastmod><image:image><image:loc>https://axxes.app/assets/og/nexus.png</image:loc></image:image></url>
+  <url><loc>https://axxes.app/products/atelier</loc><lastmod>2026-10-09</lastmod><image:image><image:loc>https://axxes.app/assets/og/atelier.png</image:loc></image:image></url>
+  <url><loc>https://axxes.app/products/vitrine</loc><lastmod>2026-10-09</lastmod><image:image><image:loc>https://axxes.app/assets/og/vitrine.png</image:loc></image:image></url>
+  <url><loc>https://axxes.app/products/pulse</loc><lastmod>2026-10-09</lastmod><image:image><image:loc>https://axxes.app/assets/og/pulse.png</image:loc></image:image></url>
+  <url><loc>https://axxes.app/products/tollbooth</loc><lastmod>2026-10-09</lastmod><image:image><image:loc>https://axxes.app/assets/og/tollbooth.png</image:loc></image:image></url>
+  <url><loc>https://axxes.app/products/axxes-dev</loc><lastmod>2026-10-09</lastmod><image:image><image:loc>https://axxes.app/assets/og/axxes-dev.png</image:loc></image:image></url>
+  <url><loc>https://axxes.app/products/axxes-api</loc><lastmod>2026-10-09</lastmod><image:image><image:loc>https://axxes.app/assets/og/axxes-api.png</image:loc></image:image></url>
+  <url><loc>https://axxes.app/products/afters-am</loc><lastmod>2026-10-09</lastmod><image:image><image:loc>https://axxes.app/assets/og/afters-am.png</image:loc></image:image></url>
+  <url><loc>https://axxes.app/products/vibez</loc><lastmod>2026-10-09</lastmod><image:image><image:loc>https://axxes.app/assets/og/vibez.png</image:loc></image:image></url>
+  <url><loc>https://axxes.app/products/qortr</loc><lastmod>2026-10-09</lastmod><image:image><image:loc>https://axxes.app/assets/og/qortr.png</image:loc></image:image></url>
+</urlset>
