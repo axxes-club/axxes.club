@@ -5,12 +5,18 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "test": "node --test tests/security*.test.*",
+    "test:security": "node --test tests/security*.test.*"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "pg": "^8.11.3",
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
-    "cors": "^2.8.5"
-  }
+    "express": "^4.18.2",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8"
+  },
+  "overrides": {}
 }

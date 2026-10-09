@@ -3,6 +3,7 @@ const express = require('express');
 const { Pool } = require('pg');
 const cors = require('cors');
 const path = require('path');
+const {consumeBudgets,clientIp} = require('./security.cjs');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -22,7 +23,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // API: Register for beta
 app.post('/api/register', async (req, res) => {
-    const { invite_code, name, email } = req.body;
+    try { await consumeBudgets(pool, [['register:global',120],['register:ip:'+clientIp(req.headers),5]]); } catch(e) { return res.status(e.status||503).json({error:'Registration temporarily unavailable'}); }
+    const { invite_code, name, email } = req.body || {};
+    if (![invite_code,name,email].every(v=>typeof v==='string') || invite_code.length>100 || name.length>200 || email.length>254) return res.status(400).json({error:'Invalid registration'});
 
     // Validate required fields
     if (!invite_code || !name || !email) {
@@ -80,16 +83,19 @@ app.post('/api/register', async (req, res) => {
             });
         }
 
-        // Insert the registration
+        // Atomically consume capacity before granting the registration. The
+        // predicate is rechecked after any concurrent row lock is released.
+        const consumed = await client.query(
+            'UPDATE invite_codes SET current_uses=current_uses+1 WHERE code=$1 AND is_active=true AND current_uses<max_uses RETURNING code',
+            [invite_code.toUpperCase()]
+        );
+        if (consumed.rows.length !== 1) {
+            await client.query('ROLLBACK');
+            return res.status(400).json({error:'This invite code has reached its maximum number of uses.'});
+        }
         await client.query(
             'INSERT INTO beta_registrations (email, name, invite_code) VALUES ($1, $2, $3)',
             [email.toLowerCase(), name, invite_code.toUpperCase()]
-        );
-
-        // Increment the code usage
-        await client.query(
-            'UPDATE invite_codes SET current_uses = current_uses + 1 WHERE code = $1',
-            [invite_code.toUpperCase()]
         );
 
         await client.query('COMMIT');
@@ -112,6 +118,7 @@ app.post('/api/register', async (req, res) => {
 
 // API: Check invite code validity (optional - for real-time validation)
 app.get('/api/check-code/:code', async (req, res) => {
+    try { await consumeBudgets(pool,[['check:global',240],['check:ip:'+clientIp(req.headers),20]]); } catch(e) { return res.status(e.status||503).json({error:'Code checks temporarily unavailable'}); }
     const { code } = req.params;
 
     try {

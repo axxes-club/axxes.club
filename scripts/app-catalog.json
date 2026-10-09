@@ -1,0 +1,128 @@
+[
+  {
+    "name": "AXXES.work",
+    "group": "Work & collaboration",
+    "kind": "Product",
+    "status": "Beta",
+    "description": "Documents, spreadsheets and presentations in one workspace.",
+    "outcome": "Turn a rough idea into a proposal, a budget and a presentation.",
+    "url": "https://axxes.work"
+  },
+  {
+    "name": "Folders",
+    "group": "Work & collaboration",
+    "kind": "Product",
+    "status": "Available",
+    "description": "Organize files and digital assets for the people who need them.",
+    "outcome": "Keep project files together instead of scattered across inboxes.",
+    "url": "https://folders.axxes.app"
+  },
+  {
+    "name": "Lanes",
+    "group": "Work & collaboration",
+    "kind": "Product",
+    "status": "Beta",
+    "description": "Project boards for organizing work and its next steps.",
+    "outcome": "Move a project from an idea to a clear sequence of tasks.",
+    "url": "https://lanes.axxes.app"
+  },
+  {
+    "name": "Relay",
+    "group": "Work & collaboration",
+    "kind": "Product",
+    "status": "Beta",
+    "description": "Conversations for teams working together.",
+    "outcome": "Give a project a place for questions, updates and decisions.",
+    "url": "https://relay.axxes.club"
+  },
+  {
+    "name": "Nexus",
+    "group": "Work & collaboration",
+    "kind": "Product",
+    "status": "Beta",
+    "description": "Knowledge spaces and pages for the things a team needs to remember.",
+    "outcome": "Build a shared handbook for a process, a project or a team.",
+    "url": "https://nexus.axxes.club"
+  },
+  {
+    "name": "Atelier",
+    "group": "Create & manage",
+    "kind": "Product",
+    "status": "Available",
+    "description": "Build and manage websites with AXXES.",
+    "outcome": "Give a business, project or idea a home on the web.",
+    "url": "https://atelier.axxes.app"
+  },
+  {
+    "name": "Vitrine",
+    "group": "Create & manage",
+    "kind": "Product / brand",
+    "status": "Beta",
+    "description": "A collection desk for provenance, condition and the stories behind objects.",
+    "outcome": "Document a collection and preserve what makes each piece meaningful.",
+    "url": "https://vitrine.axxes.app"
+  },
+  {
+    "name": "Pulse",
+    "group": "Create & manage",
+    "kind": "Product",
+    "status": "Beta",
+    "description": "Analytics for understanding activity across your digital work.",
+    "outcome": "Turn activity into a clearer picture of what people use.",
+    "url": "https://pulse.axxes.app"
+  },
+  {
+    "name": "Tollbooth",
+    "group": "Payments",
+    "kind": "Product",
+    "status": "Beta",
+    "description": "Payment collection for your own customers: links, checkout and payouts.",
+    "outcome": "Build a payment flow for your business; merchant activation requires onboarding.",
+    "url": "https://tollbooth.axxes.club"
+  },
+  {
+    "name": "AXXES.dev",
+    "group": "Develop & build",
+    "kind": "Service",
+    "status": "Beta",
+    "description": "The developer home for documentation, app credentials and API usage.",
+    "outcome": "Connect your own software to AXXES services.",
+    "url": "https://axxes.dev"
+  },
+  {
+    "name": "AXXES API",
+    "group": "Develop & build",
+    "kind": "Service",
+    "status": "Available",
+    "description": "The service gateway behind AXXES integrations. Explore it through the developer platform.",
+    "outcome": "Build an integration around documented AXXES capabilities.",
+    "url": "https://axxes.dev"
+  },
+  {
+    "name": "afters.am",
+    "group": "Independent brands",
+    "kind": "Brand",
+    "status": "Available",
+    "description": "An events brand for tickets, guest lists and the door.",
+    "outcome": "Bring an event from its first invitation to admission at the venue.",
+    "url": "https://afters.am"
+  },
+  {
+    "name": "Vibez",
+    "group": "Independent brands",
+    "kind": "Brand",
+    "status": "Beta",
+    "description": "QR-powered event photos, guest cameras and shared feeds.",
+    "outcome": "Let guests contribute to a shared view of an event.",
+    "url": "https://vibez.axxes.club"
+  },
+  {
+    "name": "Qortr",
+    "group": "Independent brands",
+    "kind": "Brand",
+    "status": "Beta",
+    "description": "A booking product for rooms and spaces.",
+    "outcome": "Make a space discoverable and organize its bookings.",
+    "url": "https://qortr.app"
+  }
+]
