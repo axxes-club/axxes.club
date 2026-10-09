@@ -81,15 +81,6 @@
     "url": "https://matter.axxes.app"
   },
   {
-    "name": "Stock",
-    "group": "Create & manage",
-    "kind": "Product",
-    "status": "Beta",
-    "description": "Inventory, purchasing, fulfillment and transfers, powered by Manifest.",
-    "outcome": "Follow stock from receipt to the place it is needed.",
-    "url": "https://manifest.axxes.club"
-  },
-  {
     "name": "Pulse",
     "group": "Create & manage",
     "kind": "Product",
@@ -99,7 +90,7 @@
     "url": "https://pulse.axxes.app"
   },
   {
-    "name": "AXXES Pay",
+    "name": "Payments",
     "group": "Payments & services",
     "kind": "Product",
     "status": "Beta",
@@ -115,15 +106,6 @@
     "description": "The central checkout for purchasing AXXES products and services.",
     "outcome": "Pay an AXXES order through a checkout built for that purchase.",
     "url": "https://payments.axxes.app"
-  },
-  {
-    "name": "AXXES Account",
-    "group": "Payments & services",
-    "kind": "Service",
-    "status": "Available",
-    "description": "Your identity and sign-in across AXXES products.",
-    "outcome": "Manage your account without creating a separate identity for each app.",
-    "url": "https://handshake.axxes.club"
   },
   {
     "name": "Binnacle",
@@ -167,7 +149,7 @@
     "kind": "Product",
     "status": "In development",
     "description": "A planned source-control home for code and development work.",
-    "outcome": "Keep a project’s code and its history together.",
+    "outcome": "Keep a project\u2019s code and its history together.",
     "url": null
   },
   {
@@ -202,17 +184,8 @@
     "group": "Custom & operations",
     "kind": "Custom solution",
     "status": "Custom",
-    "description": "A tailored materials-request and inventory workflow, built for an organization’s operations.",
+    "description": "A tailored materials-request and inventory workflow, built for an organization\u2019s operations.",
     "outcome": "Adapt stock and request flows to the way an organization actually works.",
-    "url": null
-  },
-  {
-    "name": "AXXES WebMaster",
-    "group": "Custom & operations",
-    "kind": "Internal service",
-    "status": "Internal",
-    "description": "The operations desk used to manage the AXXES platform.",
-    "outcome": "Coordinate platform administration behind the products you use.",
     "url": null
   }
 ]
