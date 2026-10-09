@@ -37,7 +37,7 @@ test('internal links resolve and unpromoted products never appear',()=>{
       if(href.startsWith('/assets/'))assert.ok(fs.existsSync(path.join(appDir,href)),route+' -> '+href);
       else assert.ok(ok.has(href),route+' links to unknown '+href);
     }
-    for(const banned of ['matter.axxes','kr8s.axxes','cloud.axxes.app','payments.axxes.app','AXXES Pay<','>Keel<','>Binnacle<'])assert.ok(!html.includes(banned),route+' promotes '+banned);
+    for(const banned of ['vitrine.axxes','>Vitrine<','matter.axxes','kr8s.axxes','cloud.axxes.app','payments.axxes.app','AXXES Pay<','>Keel<','>Binnacle<'])assert.ok(!html.includes(banned),route+' promotes '+banned);
   }
 });
 

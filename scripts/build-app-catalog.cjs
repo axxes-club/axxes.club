@@ -10,8 +10,8 @@ const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,'-');
 const groups=[...new Set(catalog.map(p=>p.group))];
 const bySlug=Object.fromEntries(catalog.map(p=>[p.slug,p]));
 
-// Owner decisions 2026-10-09: these are never advertised on App marketing surfaces.
-const notPromoted=[['Matter','matter.axxes'],['Krates','kr8s.axxes'],['AXXES Cloud','cloud.axxes.app'],['AXXES Payments','payments.axxes.app']];
+// Owner decisions 2026-10-09 (Vitrine added the same day): these are never advertised on App marketing surfaces.
+const notPromoted=[['Matter','matter.axxes'],['Krates','kr8s.axxes'],['AXXES Cloud','cloud.axxes.app'],['AXXES Payments','payments.axxes.app'],['Vitrine','vitrine.axxes']];
 const required=['name','slug','group','kind','status','category','icon','description','outcome','url','tagline','seoTitle','metaDescription','intro','capabilities','goodFor','related'];
 if(new Set(catalog.map(p=>p.name)).size!==catalog.length)throw Error('Duplicate products');
 if(new Set(catalog.map(p=>p.slug)).size!==catalog.length)throw Error('Duplicate slugs');
@@ -60,7 +60,7 @@ ${finder}
 const HEAD_COMMON=home.slice(...between(home,'<!--common-->','<!--/common-->'));
 const crumbs=(items)=>({'@type':'BreadcrumbList',itemListElement:items.map(([name,p],i)=>({'@type':'ListItem',position:i+1,name,item:ORIGIN+p}))});
 const app=p=>({'@type':'SoftwareApplication','@id':ORIGIN+'/products/'+p.slug+'#app',name:p.name,description:p.metaDescription,url:ORIGIN+'/products/'+p.slug,sameAs:p.url,applicationCategory:p.category,operatingSystem:'Web',publisher:{'@id':ORIGIN+'/#org'}});
-const ico=(p,size='')=>`<span class="ico ${size} ${{folders:'alt2',vitrine:'alt2',atelier:'alt',pulse:'alt',lanes:'alt',nexus:'alt2',relay:'alt'}[p.icon]||''}"><svg><use href="#g-${p.icon}"/></svg></span>`;
+const ico=(p,size='')=>`<span class="ico ${size} ${{folders:'alt2',atelier:'alt',pulse:'alt',lanes:'alt',nexus:'alt2',relay:'alt'}[p.icon]||''}"><svg><use href="#g-${p.icon}"/></svg></span>`;
 const status=p=>p.status==='Beta'?'Beta':p.status;
 
 // ---- footer (every page) -------------------------------------------------

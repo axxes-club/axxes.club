@@ -21,8 +21,16 @@
       "Slides with layouts, speaker notes and a present mode",
       "Files stored alongside the rest of your work in Folders"
     ],
-    "goodFor": ["Freelancers writing proposals and budgets", "Small teams that share documents", "Anyone who wants an office suite in the browser"],
-    "related": ["folders", "lanes", "nexus"]
+    "goodFor": [
+      "Freelancers writing proposals and budgets",
+      "Small teams that share documents",
+      "Anyone who wants an office suite in the browser"
+    ],
+    "related": [
+      "folders",
+      "lanes",
+      "nexus"
+    ]
   },
   {
     "name": "Folders",
@@ -46,8 +54,16 @@
       "Open a file in the AXXES app it belongs to",
       "Files from AXXES.work, Vibez and other apps collected in one library"
     ],
-    "goodFor": ["Teams that share project files", "Creative work with lots of media", "Keeping personal and family records together"],
-    "related": ["axxes-work", "atelier", "vitrine"]
+    "goodFor": [
+      "Teams that share project files",
+      "Creative work with lots of media",
+      "Keeping personal and family records together"
+    ],
+    "related": [
+      "axxes-work",
+      "atelier",
+      "nexus"
+    ]
   },
   {
     "name": "Lanes",
@@ -71,8 +87,16 @@
       "Insights on throughput, lead time, work in progress and aging",
       "A REST API with tokens and webhooks"
     ],
-    "goodFor": ["Product and engineering teams", "Agencies running client projects", "Anyone planning work in stages"],
-    "related": ["relay", "nexus", "axxes-work"]
+    "goodFor": [
+      "Product and engineering teams",
+      "Agencies running client projects",
+      "Anyone planning work in stages"
+    ],
+    "related": [
+      "relay",
+      "nexus",
+      "axxes-work"
+    ]
   },
   {
     "name": "Relay",
@@ -94,8 +118,15 @@
       "Real-time messages",
       "Signs in with your AXXES account"
     ],
-    "goodFor": ["Teams that want chat next to their projects", "Small companies replacing scattered group chats"],
-    "related": ["lanes", "nexus", "axxes-work"]
+    "goodFor": [
+      "Teams that want chat next to their projects",
+      "Small companies replacing scattered group chats"
+    ],
+    "related": [
+      "lanes",
+      "nexus",
+      "axxes-work"
+    ]
   },
   {
     "name": "Nexus",
@@ -119,8 +150,16 @@
       "Search everything with ⌘K",
       "Install it as an app on your device"
     ],
-    "goodFor": ["Team handbooks and onboarding", "Process documentation", "Project notes that outlive the project"],
-    "related": ["lanes", "relay", "axxes-work"]
+    "goodFor": [
+      "Team handbooks and onboarding",
+      "Process documentation",
+      "Project notes that outlive the project"
+    ],
+    "related": [
+      "lanes",
+      "relay",
+      "axxes-work"
+    ]
   },
   {
     "name": "Atelier",
@@ -144,32 +183,16 @@
       "Connect your own custom domain",
       "Collect form submissions and see traffic with Pulse"
     ],
-    "goodFor": ["Small businesses that need a site", "Projects and portfolios", "Organizations managing several sites"],
-    "related": ["pulse", "folders", "vitrine"]
-  },
-  {
-    "name": "Vitrine",
-    "slug": "vitrine",
-    "group": "Create & manage",
-    "kind": "Product / brand",
-    "status": "Beta",
-    "category": "BusinessApplication",
-    "icon": "vitrine",
-    "description": "A collection desk for provenance, condition and the stories behind objects.",
-    "outcome": "Document a collection and preserve what makes each piece meaningful.",
-    "url": "https://vitrine.axxes.app",
-    "tagline": "A home for your collection and the stories behind it",
-    "seoTitle": "Vitrine: collection management for art and objects",
-    "metaDescription": "Vitrine is collection management software for collectors and estates. Record provenance, condition and the story of every piece in one place.",
-    "intro": "Vitrine is a desk for people who look after a collection. Catalogue each piece, keep its provenance and condition up to date and preserve the stories that make it matter.",
-    "capabilities": [
-      "Catalogue artworks and objects",
-      "Record provenance for each piece",
-      "Track condition over time",
-      "Keep the history and stories behind the collection"
+    "goodFor": [
+      "Small businesses that need a site",
+      "Projects and portfolios",
+      "Organizations managing several sites"
     ],
-    "goodFor": ["Private collectors", "Estates and family collections", "Collection administrators"],
-    "related": ["folders", "atelier"]
+    "related": [
+      "pulse",
+      "folders",
+      "tollbooth"
+    ]
   },
   {
     "name": "Pulse",
@@ -193,8 +216,15 @@
       "Built into Atelier sites",
       "30-day free trial"
     ],
-    "goodFor": ["Site owners who want simple analytics", "Teams measuring product use", "Atelier site owners"],
-    "related": ["atelier", "tollbooth"]
+    "goodFor": [
+      "Site owners who want simple analytics",
+      "Teams measuring product use",
+      "Atelier site owners"
+    ],
+    "related": [
+      "atelier",
+      "tollbooth"
+    ]
   },
   {
     "name": "Tollbooth",
@@ -218,8 +248,16 @@
       "A REST API with live and test keys and idempotent requests",
       "Signed webhooks with a delivery log"
     ],
-    "goodFor": ["Small businesses selling online", "Freelancers collecting deposits", "Developers adding payments to an app"],
-    "related": ["pulse", "axxes-dev", "atelier"]
+    "goodFor": [
+      "Small businesses selling online",
+      "Freelancers collecting deposits",
+      "Developers adding payments to an app"
+    ],
+    "related": [
+      "pulse",
+      "axxes-dev",
+      "atelier"
+    ]
   },
   {
     "name": "AXXES.dev",
@@ -242,8 +280,15 @@
       "Plan limits and a changelog",
       "Review and revoke personal tokens"
     ],
-    "goodFor": ["Developers integrating with AXXES", "Teams automating their AXXES workspace"],
-    "related": ["axxes-api", "tollbooth", "lanes"]
+    "goodFor": [
+      "Developers integrating with AXXES",
+      "Teams automating their AXXES workspace"
+    ],
+    "related": [
+      "axxes-api",
+      "tollbooth",
+      "lanes"
+    ]
   },
   {
     "name": "AXXES API",
@@ -264,8 +309,13 @@
       "An HTTP API behind AXXES integrations",
       "Documentation and examples on AXXES.dev"
     ],
-    "goodFor": ["Developers building integrations"],
-    "related": ["axxes-dev", "tollbooth"]
+    "goodFor": [
+      "Developers building integrations"
+    ],
+    "related": [
+      "axxes-dev",
+      "tollbooth"
+    ]
   },
   {
     "name": "afters.am",
@@ -288,8 +338,14 @@
       "Door scanning at the venue",
       "Vibez guest photo walls built in"
     ],
-    "goodFor": ["Promoters and party organizers", "Venues running their own events"],
-    "related": ["vibez", "qortr"]
+    "goodFor": [
+      "Promoters and party organizers",
+      "Venues running their own events"
+    ],
+    "related": [
+      "vibez",
+      "qortr"
+    ]
   },
   {
     "name": "Vibez",
@@ -313,8 +369,15 @@
       "Moderation, reports and bans for organizers",
       "Every photo also saved to Folders"
     ],
-    "goodFor": ["Parties and nightlife", "Weddings and private events", "Brand activations"],
-    "related": ["afters-am", "folders"]
+    "goodFor": [
+      "Parties and nightlife",
+      "Weddings and private events",
+      "Brand activations"
+    ],
+    "related": [
+      "afters-am",
+      "folders"
+    ]
   },
   {
     "name": "Qortr",
@@ -336,7 +399,14 @@
       "Flexible pricing",
       "Online bookings"
     ],
-    "goodFor": ["Venues and studios", "Coworking and shared offices", "Anyone renting rooms by the hour"],
-    "related": ["afters-am", "tollbooth"]
+    "goodFor": [
+      "Venues and studios",
+      "Coworking and shared offices",
+      "Anyone renting rooms by the hour"
+    ],
+    "related": [
+      "afters-am",
+      "tollbooth"
+    ]
   }
 ]
