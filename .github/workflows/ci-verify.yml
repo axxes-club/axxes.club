@@ -62,7 +62,11 @@
         },
         {
           "name": "Check Node entrypoint",
-          "run": "node --check server.js"
+          "run": "node --check server.js && node --check app-site.cjs"
+        },
+        {
+          "name": "Run tests",
+          "run": "npm test"
         }
       ]
     }

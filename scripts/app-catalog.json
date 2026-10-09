@@ -1,128 +1,342 @@
 [
   {
     "name": "AXXES.work",
+    "slug": "axxes-work",
     "group": "Work & collaboration",
     "kind": "Product",
     "status": "Beta",
+    "category": "BusinessApplication",
+    "icon": "work",
     "description": "Documents, spreadsheets and presentations in one workspace.",
     "outcome": "Turn a rough idea into a proposal, a budget and a presentation.",
-    "url": "https://axxes.work"
+    "url": "https://axxes.work",
+    "tagline": "Documents, spreadsheets and slides in your browser",
+    "seoTitle": "AXXES.work: online documents, spreadsheets and slides",
+    "metaDescription": "Write documents, build spreadsheets and present slides in your browser with AXXES.work. Export to .xlsx and .pptx, and keep every file in Folders.",
+    "intro": "AXXES.work is the AXXES office suite. Write documents, work through numbers in a spreadsheet and build a presentation without installing anything. Your files keep the format you opened them in.",
+    "capabilities": [
+      "Documents with a block editor for proposals, briefs and notes",
+      "Spreadsheets with an A1 grid, a formula bar and common functions",
+      "Export spreadsheets to .xlsx and presentations to .pptx",
+      "Slides with layouts, speaker notes and a present mode",
+      "Files stored alongside the rest of your work in Folders"
+    ],
+    "goodFor": ["Freelancers writing proposals and budgets", "Small teams that share documents", "Anyone who wants an office suite in the browser"],
+    "related": ["folders", "lanes", "nexus"]
   },
   {
     "name": "Folders",
+    "slug": "folders",
     "group": "Work & collaboration",
     "kind": "Product",
     "status": "Available",
+    "category": "BusinessApplication",
+    "icon": "folders",
     "description": "Organize files and digital assets for the people who need them.",
     "outcome": "Keep project files together instead of scattered across inboxes.",
-    "url": "https://folders.axxes.app"
+    "url": "https://folders.axxes.app",
+    "tagline": "Store, organize and share files",
+    "seoTitle": "Folders: file storage, sharing and digital asset management",
+    "metaDescription": "Folders stores, organizes and shares your files and digital assets with role-based access. Files from every AXXES app land in one place.",
+    "intro": "Folders is where files live on AXXES. Upload documents, photos and media, organize them into folders and tags, and decide who can see or change each one. Files created in other AXXES apps show up here too, with a link back to where they came from.",
+    "capabilities": [
+      "Upload and organize files and digital assets in folders",
+      "Tag files so they are easy to find later",
+      "Share with roles: owners, admins and managers edit, members upload, viewers read",
+      "Open a file in the AXXES app it belongs to",
+      "Files from AXXES.work, Vibez and other apps collected in one library"
+    ],
+    "goodFor": ["Teams that share project files", "Creative work with lots of media", "Keeping personal and family records together"],
+    "related": ["axxes-work", "atelier", "vitrine"]
   },
   {
     "name": "Lanes",
+    "slug": "lanes",
     "group": "Work & collaboration",
     "kind": "Product",
     "status": "Beta",
+    "category": "BusinessApplication",
+    "icon": "lanes",
     "description": "Project boards for organizing work and its next steps.",
     "outcome": "Move a project from an idea to a clear sequence of tasks.",
-    "url": "https://lanes.axxes.app"
+    "url": "https://lanes.axxes.app",
+    "tagline": "Boards for every team",
+    "seoTitle": "Lanes: kanban boards, sprints and project tracking",
+    "metaDescription": "Lanes gives teams kanban, list and table boards, sprints, scrum poker and flow insights like lead time and WIP, with a REST API and webhooks.",
+    "intro": "Lanes is project management for teams that want to see the work. Plan on a kanban board, a list or a table, run sprints, estimate together and watch how work flows through the team.",
+    "capabilities": [
+      "Kanban, list and table views of the same board",
+      "Board templates to start a project quickly",
+      "Sprints and scrum poker for planning together",
+      "Insights on throughput, lead time, work in progress and aging",
+      "A REST API with tokens and webhooks"
+    ],
+    "goodFor": ["Product and engineering teams", "Agencies running client projects", "Anyone planning work in stages"],
+    "related": ["relay", "nexus", "axxes-work"]
   },
   {
     "name": "Relay",
+    "slug": "relay",
     "group": "Work & collaboration",
     "kind": "Product",
     "status": "Beta",
+    "category": "CommunicationApplication",
+    "icon": "relay",
     "description": "Conversations for teams working together.",
     "outcome": "Give a project a place for questions, updates and decisions.",
-    "url": "https://relay.axxes.club"
+    "url": "https://relay.axxes.club",
+    "tagline": "Team chat that stays with the work",
+    "seoTitle": "Relay: team chat with spaces and rooms",
+    "metaDescription": "Relay is team chat on AXXES. Organize conversations into spaces and rooms so questions, updates and decisions stay next to the work.",
+    "intro": "Relay is where a team talks. Group conversations into spaces and rooms for each team or project, so the discussion stays close to the work it is about.",
+    "capabilities": [
+      "Spaces and rooms for teams and projects",
+      "Real-time messages",
+      "Signs in with your AXXES account"
+    ],
+    "goodFor": ["Teams that want chat next to their projects", "Small companies replacing scattered group chats"],
+    "related": ["lanes", "nexus", "axxes-work"]
   },
   {
     "name": "Nexus",
+    "slug": "nexus",
     "group": "Work & collaboration",
     "kind": "Product",
     "status": "Beta",
+    "category": "BusinessApplication",
+    "icon": "nexus",
     "description": "Knowledge spaces and pages for the things a team needs to remember.",
     "outcome": "Build a shared handbook for a process, a project or a team.",
-    "url": "https://nexus.axxes.club"
+    "url": "https://nexus.axxes.club",
+    "tagline": "What your team knows, written down once",
+    "seoTitle": "Nexus: team wiki and knowledge base",
+    "metaDescription": "Nexus is a team wiki: spaces, nested pages, wiki links with backlinks, version history and fast search. Write it down once and find it again.",
+    "intro": "Nexus is a knowledge base for teams. Write handbooks, processes and project notes in spaces of nested pages, link them together and find anything with a keystroke.",
+    "capabilities": [
+      "Spaces with nested pages",
+      "Wiki links between pages, with backlinks",
+      "Version history on every page",
+      "Search everything with ⌘K",
+      "Install it as an app on your device"
+    ],
+    "goodFor": ["Team handbooks and onboarding", "Process documentation", "Project notes that outlive the project"],
+    "related": ["lanes", "relay", "axxes-work"]
   },
   {
     "name": "Atelier",
+    "slug": "atelier",
     "group": "Create & manage",
     "kind": "Product",
     "status": "Available",
+    "category": "DesignApplication",
+    "icon": "atelier",
     "description": "Build and manage websites with AXXES.",
     "outcome": "Give a business, project or idea a home on the web.",
-    "url": "https://atelier.axxes.app"
+    "url": "https://atelier.axxes.app",
+    "tagline": "Design, publish and manage your website",
+    "seoTitle": "Atelier: website builder and CMS with free and custom domains",
+    "metaDescription": "Design and publish a website with Atelier, the AXXES website builder and CMS. Start on a free name.axxes.app address or connect your own domain.",
+    "intro": "Atelier is the AXXES website studio. Design pages from ready-made blocks, manage the content yourself and publish on a free axxes.app address or your own domain.",
+    "capabilities": [
+      "Design pages from vetted, ready-made blocks",
+      "Manage your site's content without a developer",
+      "Publish on a free name.axxes.app address",
+      "Connect your own custom domain",
+      "Collect form submissions and see traffic with Pulse"
+    ],
+    "goodFor": ["Small businesses that need a site", "Projects and portfolios", "Organizations managing several sites"],
+    "related": ["pulse", "folders", "vitrine"]
   },
   {
     "name": "Vitrine",
+    "slug": "vitrine",
     "group": "Create & manage",
     "kind": "Product / brand",
     "status": "Beta",
+    "category": "BusinessApplication",
+    "icon": "vitrine",
     "description": "A collection desk for provenance, condition and the stories behind objects.",
     "outcome": "Document a collection and preserve what makes each piece meaningful.",
-    "url": "https://vitrine.axxes.app"
+    "url": "https://vitrine.axxes.app",
+    "tagline": "A home for your collection and the stories behind it",
+    "seoTitle": "Vitrine: collection management for art and objects",
+    "metaDescription": "Vitrine is collection management software for collectors and estates. Record provenance, condition and the story of every piece in one place.",
+    "intro": "Vitrine is a desk for people who look after a collection. Catalogue each piece, keep its provenance and condition up to date and preserve the stories that make it matter.",
+    "capabilities": [
+      "Catalogue artworks and objects",
+      "Record provenance for each piece",
+      "Track condition over time",
+      "Keep the history and stories behind the collection"
+    ],
+    "goodFor": ["Private collectors", "Estates and family collections", "Collection administrators"],
+    "related": ["folders", "atelier"]
   },
   {
     "name": "Pulse",
+    "slug": "pulse",
     "group": "Create & manage",
     "kind": "Product",
     "status": "Beta",
+    "category": "BusinessApplication",
+    "icon": "pulse",
     "description": "Analytics for understanding activity across your digital work.",
     "outcome": "Turn activity into a clearer picture of what people use.",
-    "url": "https://pulse.axxes.app"
+    "url": "https://pulse.axxes.app",
+    "tagline": "Live vital signs for your organization",
+    "seoTitle": "Pulse: website and app analytics with consent controls",
+    "metaDescription": "Pulse is web and app analytics with consent controls. See traffic and conversions across your sites and apps. Try it free for 30 days.",
+    "intro": "Pulse shows what is happening across your websites and apps. Add it to a site or app, respect your visitors' consent choices and see traffic and conversions in reports for your organization.",
+    "capabilities": [
+      "Traffic and conversion reports for your sites and apps",
+      "Consent controls for your visitors",
+      "A JavaScript SDK and setup recipes",
+      "Built into Atelier sites",
+      "30-day free trial"
+    ],
+    "goodFor": ["Site owners who want simple analytics", "Teams measuring product use", "Atelier site owners"],
+    "related": ["atelier", "tollbooth"]
   },
   {
     "name": "Tollbooth",
+    "slug": "tollbooth",
     "group": "Payments",
     "kind": "Product",
     "status": "Beta",
+    "category": "FinanceApplication",
+    "icon": "toll",
     "description": "Payment collection for your own customers: links, checkout and payouts.",
     "outcome": "Build a payment flow for your business; merchant activation requires onboarding.",
-    "url": "https://tollbooth.axxes.club"
+    "url": "https://tollbooth.axxes.club",
+    "tagline": "Paid, and paid out",
+    "seoTitle": "Tollbooth: payment links, online checkout and payouts",
+    "metaDescription": "Take payments with Tollbooth: payment links, hosted checkout, a payments API with test keys and signed webhooks, and payouts to your bank.",
+    "intro": "Tollbooth lets a business get paid online. Send a payment link or a hosted checkout page, follow every payment in one dashboard and receive payouts to your bank. Developers get an API, test keys and webhooks.",
+    "capabilities": [
+      "Payment links and hosted checkout pages",
+      "A dashboard for payments, refunds, customers and products",
+      "Payouts to your bank account",
+      "A REST API with live and test keys and idempotent requests",
+      "Signed webhooks with a delivery log"
+    ],
+    "goodFor": ["Small businesses selling online", "Freelancers collecting deposits", "Developers adding payments to an app"],
+    "related": ["pulse", "axxes-dev", "atelier"]
   },
   {
     "name": "AXXES.dev",
+    "slug": "axxes-dev",
     "group": "Develop & build",
     "kind": "Service",
     "status": "Beta",
+    "category": "DeveloperApplication",
+    "icon": "dev",
     "description": "The developer home for documentation, app credentials and API usage.",
     "outcome": "Connect your own software to AXXES services.",
-    "url": "https://axxes.dev"
+    "url": "https://axxes.dev",
+    "tagline": "The whole company, as an API",
+    "seoTitle": "AXXES.dev: developer portal, API reference and guides",
+    "metaDescription": "AXXES.dev is the developer portal for AXXES: API reference, quickstart, guides, plan limits and changelog for connecting your software.",
+    "intro": "AXXES.dev is where developers start. Read the API reference, follow the quickstart and guides, and see the limits of each plan before you connect your software to AXXES.",
+    "capabilities": [
+      "API reference for AXXES services",
+      "Quickstart and guides",
+      "Plan limits and a changelog",
+      "Review and revoke personal tokens"
+    ],
+    "goodFor": ["Developers integrating with AXXES", "Teams automating their AXXES workspace"],
+    "related": ["axxes-api", "tollbooth", "lanes"]
   },
   {
     "name": "AXXES API",
+    "slug": "axxes-api",
     "group": "Develop & build",
     "kind": "Service",
     "status": "Available",
+    "category": "DeveloperApplication",
+    "icon": "dev",
     "description": "The service gateway behind AXXES integrations. Explore it through the developer platform.",
     "outcome": "Build an integration around documented AXXES capabilities.",
-    "url": "https://axxes.dev"
+    "url": "https://axxes.dev",
+    "tagline": "AXXES, from your own code",
+    "seoTitle": "AXXES API: integrate your software with AXXES",
+    "metaDescription": "The AXXES API is the gateway behind AXXES integrations. Explore it through AXXES.dev and build on documented capabilities.",
+    "intro": "The AXXES API is the gateway your software talks to. Start from the documentation on AXXES.dev and build integrations on the capabilities that are documented there.",
+    "capabilities": [
+      "An HTTP API behind AXXES integrations",
+      "Documentation and examples on AXXES.dev"
+    ],
+    "goodFor": ["Developers building integrations"],
+    "related": ["axxes-dev", "tollbooth"]
   },
   {
     "name": "afters.am",
+    "slug": "afters-am",
     "group": "Independent brands",
     "kind": "Brand",
     "status": "Available",
+    "category": "EntertainmentApplication",
+    "icon": "ticket",
     "description": "An events brand for tickets, guest lists and the door.",
     "outcome": "Bring an event from its first invitation to admission at the venue.",
-    "url": "https://afters.am"
+    "url": "https://afters.am",
+    "tagline": "Sell the night, run the door",
+    "seoTitle": "afters.am: event ticketing, guest lists and door scanning",
+    "metaDescription": "afters.am is event ticketing for nights out: sell tickets, manage guest lists and scan at the door, with Vibez photo walls built in.",
+    "intro": "afters.am is ticketing for events and nights out. Publish an event, sell tickets, manage the guest list and check people in at the door from your phone.",
+    "capabilities": [
+      "Event pages and ticket sales",
+      "Guest lists",
+      "Door scanning at the venue",
+      "Vibez guest photo walls built in"
+    ],
+    "goodFor": ["Promoters and party organizers", "Venues running their own events"],
+    "related": ["vibez", "qortr"]
   },
   {
     "name": "Vibez",
+    "slug": "vibez",
     "group": "Independent brands",
     "kind": "Brand",
     "status": "Beta",
+    "category": "PhotographyApplication",
+    "icon": "camera",
     "description": "QR-powered event photos, guest cameras and shared feeds.",
     "outcome": "Let guests contribute to a shared view of an event.",
-    "url": "https://vibez.axxes.club"
+    "url": "https://vibez.axxes.club",
+    "tagline": "Every room is a photobooth",
+    "seoTitle": "Vibez: QR event photo booth and live photo wall",
+    "metaDescription": "Turn any room into a photobooth with Vibez. Guests scan a QR code, take photos without an account and see them on a live feed and TV wall.",
+    "intro": "Vibez turns an event into a shared photo album. Print QR codes around the room; guests scan one, take photos from their phone without creating an account and watch them appear on a live feed and a TV wall.",
+    "capabilities": [
+      "QR spots guests scan to start shooting",
+      "No account needed for guests",
+      "Live photo feed and TV wall",
+      "Moderation, reports and bans for organizers",
+      "Every photo also saved to Folders"
+    ],
+    "goodFor": ["Parties and nightlife", "Weddings and private events", "Brand activations"],
+    "related": ["afters-am", "folders"]
   },
   {
     "name": "Qortr",
+    "slug": "qortr",
     "group": "Independent brands",
     "kind": "Brand",
     "status": "Beta",
+    "category": "BusinessApplication",
+    "icon": "room",
     "description": "A booking product for rooms and spaces.",
     "outcome": "Make a space discoverable and organize its bookings.",
-    "url": "https://qortr.app"
+    "url": "https://qortr.app",
+    "tagline": "The room, booked and paid",
+    "seoTitle": "Qortr: room and space booking with floor maps",
+    "metaDescription": "Qortr is room and venue booking software: interactive floor maps, flexible pricing and bookings for rooms, desks and event spaces.",
+    "intro": "Qortr helps people find and book a space. Put your rooms on an interactive floor map, set flexible pricing and manage every booking in one place.",
+    "capabilities": [
+      "Spaces and rooms on interactive floor maps",
+      "Flexible pricing",
+      "Online bookings"
+    ],
+    "goodFor": ["Venues and studios", "Coworking and shared offices", "Anyone renting rooms by the hour"],
+    "related": ["afters-am", "tollbooth"]
   }
 ]
