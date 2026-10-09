@@ -2,28 +2,316 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AXXES.app — One account for everything you run</title>
-<meta name="description" content="Documents, files, websites, collections and payments. A family of tools for you, your practice or your company.">
+<title>AXXES — Everything reconciles</title>
+<meta name="description" content="A family of apps, services and brands for documents, files, websites, payments and collections. Built as one system.">
+<meta name="color-scheme" content="dark light">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
 <link rel="canonical" href="https://axxes.app/">
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f8f7f3;color:#181a20;font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}header{padding:30px 5vw;border-bottom:1px solid #e3e1da;display:flex;align-items:center;justify-content:space-between}.brand{font-size:28px;font-weight:900;letter-spacing:-1.5px}.brand span{color:#3247ef}nav{display:flex;gap:28px;font-size:13px}main{max-width:1100px;width:90vw;margin:auto}.hero{padding:110px 0 100px}.eyebrow{font-size:10px;letter-spacing:2.3px;font-weight:700;color:#3247ef}h1{font-size:clamp(48px,7vw,88px);font-weight:500;line-height:1.06;letter-spacing:-4px;max-width:900px;margin:28px 0}p{color:#616570;line-height:1.6;font-size:18px;max-width:600px}.button{display:inline-block;background:#3247ef;color:white;padding:18px 25px;border-radius:4px;font-size:14px;margin-top:25px}.button:hover{background:#1828a9}.apps{padding:50px 0 90px;border-top:1px solid #e3e1da}h2{font-size:34px;font-weight:500;letter-spacing:-1px;margin:20px 0 35px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{display:block;padding:28px;border:1px solid #e3e1da;background:#fff;border-radius:8px;min-height:165px}.card:hover{border-color:#3247ef}.card h3{margin:0 0 14px;font-size:19px;font-weight:500}.card p{font-size:14px;margin:0}.card .arrow{float:right;color:#3247ef}footer{padding:25px 5vw;border-top:1px solid #e3e1da;font-size:12px;display:flex;justify-content:space-between;color:#777b85}@media(max-width:650px){header{padding:24px 5vw}nav{gap:18px;font-size:11px}.brand{font-size:24px}.hero{padding:70px 0}h1{letter-spacing:-2.5px}p{font-size:16px}.grid{grid-template-columns:1fr}.card{min-height:135px}footer{gap:18px}}
-
-.story{border-top:1px solid #e3e1da;padding:70px 0 85px;display:grid;grid-template-columns:1fr 1.15fr;gap:70px}.story h2{font-size:42px;line-height:1.15;margin:24px 0}.story p{font-size:16px}.audiences{display:flex;gap:26px;margin-bottom:35px}.audiences span{font-size:11px;letter-spacing:1.6px;color:#777b85;padding-bottom:16px;border-bottom:2px solid #e3e1da;position:relative}.audiences .is-active{color:#3247ef}.audiences .is-active:after{content:"";position:absolute;bottom:-2px;left:0;height:2px;width:calc(var(--progress,0)*100%);background:#3247ef}.audience-panel{background:#fff;padding:34px;border:1px solid #e3e1da;border-radius:8px;margin-bottom:16px}.audience-panel h3{font-size:28px;font-weight:500;letter-spacing:-.7px;margin:0 0 20px}.audience-panel p{margin:0 0 24px}.audience-panel ul{padding-left:19px;margin:0;color:#616570;font-size:14px;line-height:1.9}.rotating .audience-panel{min-height:310px;animation:reveal .45s ease}.audience-panel[hidden]{display:none}@keyframes reveal{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}.section-end{display:inline-block;margin-top:30px;color:#3247ef;font-size:14px}.sitemap{display:block;padding:55px 5vw 25px}.footer-top{display:flex;align-items:center;gap:40px;flex-wrap:wrap}.footer-top p{font-size:14px;flex:1}.footer-top>a:last-child{color:#3247ef;font-size:13px}.sitemap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:38px;margin:45px 0}.sitemap h3{font-size:12px;color:#181a20;margin:0 0 17px}.sitemap-grid a,.sitemap-grid span{display:block;margin:12px 0;font-size:13px}.sitemap small{font-size:10px;color:#777b85;margin-left:8px}.sitemap a:hover{color:#3247ef}.legend{font-size:11px;line-height:2;border-top:1px solid #e3e1da;padding:20px 0}.footer-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:12px}.catalog-hero{padding-bottom:55px}.catalog-note{font-size:14px}.catalog-jumps{flex-wrap:wrap;gap:15px 25px;margin-top:35px;color:#3247ef}.catalog-group{padding-bottom:60px}.product{display:flex;flex-direction:column;min-height:350px}.product-meta{font-size:10px;color:#777b85;display:flex;justify-content:space-between;gap:10px;margin-bottom:25px}.product-meta span{color:#3247ef}.outcome{border-top:1px solid #eee;margin-top:24px;padding-top:20px}.outcome .eyebrow{font-size:8px}.outcome p{margin-top:9px;font-size:13px}.product-link{color:#3247ef;font-size:13px;margin-top:auto;padding-top:25px}@media(max-width:800px){.story{grid-template-columns:1fr;gap:30px}.story h2{font-size:34px}.grid{grid-template-columns:repeat(2,1fr)}.sitemap-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:650px){.grid{grid-template-columns:1fr}.story{padding:45px 0}.audiences{gap:20px}.audiences span{font-size:10px}.audience-panel{padding:25px}.rotating .audience-panel{min-height:330px}.footer-top{gap:15px}.footer-top p{flex-basis:100%}.sitemap-grid{gap:20px}.catalog-jumps{font-size:12px}.footer-bottom{flex-wrap:wrap}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.audience-panel{animation:none!important}}
-.rotation-control{background:none;border:0;padding:8px 0;color:#616570;font:inherit;font-size:12px;cursor:pointer;text-decoration:underline;text-underline-offset:4px}.rotation-control:focus-visible{outline:2px solid #3247ef;outline-offset:4px}</style>
+:root{--bg:#07070a;--bg-2:#0c0c11;--panel:#121218;--panel-2:#1a1a22;--glass:rgba(22,22,30,.72);--line:rgba(255,255,255,.08);--line-2:rgba(255,255,255,.14);--text:#f4f5f8;--muted:#9096a3;--faint:#5d6270;--accent:#6e95f2;--accent-2:#9bb6f7;--accent-deep:#2660d9;--accent-soft:rgba(110,149,242,.14);--ok:#34d399;--ok-soft:rgba(52,211,153,.14);--glow:rgba(56,104,230,.45);--shadow:0 1px 0 rgba(255,255,255,.04) inset,0 30px 80px -24px rgba(0,0,0,.8);--card-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 12px 32px -14px rgba(0,0,0,.7);--r-xl:28px;--r-lg:20px;--r:14px;--r-sm:10px;--sans:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+@media(prefers-color-scheme:light){:root{--bg:#f5f6f9;--bg-2:#eef0f5;--panel:#fff;--panel-2:#f3f5f9;--glass:rgba(255,255,255,.78);--line:rgba(11,14,20,.08);--line-2:rgba(11,14,20,.14);--text:#0b0e14;--muted:#5d6574;--faint:#9aa1ae;--accent:#2660d9;--accent-2:#1d4fb8;--accent-deep:#2660d9;--accent-soft:rgba(38,96,217,.1);--ok:#047857;--ok-soft:rgba(4,120,87,.1);--glow:rgba(38,96,217,.22);--shadow:0 1px 0 rgba(255,255,255,.9) inset,0 30px 70px -28px rgba(20,30,60,.35);--card-shadow:0 1px 2px rgba(11,14,20,.04),0 10px 28px -14px rgba(20,30,60,.22)}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}::selection{background:var(--accent);color:#fff}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+/* app icon: one family look, App blue */
+.ico{--s:44px;width:var(--s);height:var(--s);flex:none;display:grid;place-items:center;border-radius:calc(var(--s)*.27);background:linear-gradient(155deg,#7aa0ff 0%,#3b6ff0 45%,#1d47b8 100%);color:#fff;box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 -2px 6px rgba(0,0,0,.18) inset,0 8px 18px -8px rgba(38,96,217,.8)}
+.ico svg{width:52%;height:52%}.ico.sm{--s:22px}.ico.md{--s:32px}.ico.lg{--s:56px}
+.ico.alt{background:linear-gradient(155deg,#a5b8ff 0%,#5a6cf0 50%,#3138b8 100%)}.ico.alt2{background:linear-gradient(155deg,#8fd0ff 0%,#3d8ef0 50%,#1f56c4 100%)}
+/* header */
+header{position:sticky;top:12px;z-index:30;margin:12px auto 0;width:min(1180px,calc(100% - 24px));display:flex;align-items:center;gap:22px;padding:8px 8px 8px 18px;border-radius:999px;background:var(--glass);border:1px solid var(--line);backdrop-filter:saturate(1.6) blur(18px);-webkit-backdrop-filter:saturate(1.6) blur(18px);box-shadow:var(--card-shadow)}
+.brand{font-size:18px;font-weight:700;letter-spacing:-.5px;white-space:nowrap;display:flex;align-items:center}.brand span{color:var(--accent)}
+.brand .ico{--s:26px;margin-right:9px;border-radius:8px;font-size:13px;font-weight:700;letter-spacing:0;color:#fff}
+header nav{display:flex;gap:4px;font-size:14px;color:var(--muted);margin-right:auto}header nav a{padding:8px 12px;border-radius:999px}header nav a:hover{color:var(--text);background:var(--line)}
+.find{display:flex;align-items:center;gap:10px;height:38px;padding:0 8px 0 14px;border-radius:999px;border:1px solid var(--line);background:var(--panel-2);color:var(--muted);font-size:13px;cursor:pointer;min-width:220px;transition:border-color .15s,color .15s}.find:hover{border-color:var(--line-2);color:var(--text)}.find kbd{margin-left:auto}
+kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line-2);background:var(--panel);padding:2px 7px;border-radius:6px;color:var(--muted)}
+.account{height:38px;display:inline-flex;align-items:center;padding:0 16px;border-radius:999px;background:var(--text);color:var(--bg);font-size:14px;font-weight:500}
+main{max-width:1180px;width:calc(100% - 32px);margin:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--accent)}
+h1,h2,h3{font-weight:600;color:var(--text)}
+p{color:var(--muted);line-height:1.6;font-size:17px;max-width:600px}
+.button{display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 22px;border-radius:14px;background:linear-gradient(180deg,#5d8af5,var(--accent-deep));color:#fff;font-size:15px;font-weight:500;box-shadow:0 1px 0 rgba(255,255,255,.3) inset,0 10px 24px -10px var(--glow);transition:transform .15s,box-shadow .15s}.button:hover{transform:translateY(-1px);box-shadow:0 1px 0 rgba(255,255,255,.3) inset,0 14px 30px -10px var(--glow)}
+.button.ghost{background:var(--panel);color:var(--text);border:1px solid var(--line-2);box-shadow:var(--card-shadow)}
+/* hero */
+.hero{position:relative;padding:72px 0 40px}
+.hero.home{text-align:center;padding:96px 0 0}
+.hero.home::before{content:"";position:absolute;left:50%;top:-140px;width:1100px;height:720px;transform:translateX(-50%);background:radial-gradient(closest-side,var(--glow),transparent 70%);filter:blur(10px);z-index:-1;pointer-events:none}
+.hero.home::after{content:"";position:absolute;inset:-120px -50vw auto;height:760px;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 50% 60% at 50% 30%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 50% 60% at 50% 30%,#000 20%,transparent 75%);z-index:-2;opacity:.6;pointer-events:none}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:6px 14px 6px 6px;border-radius:999px;border:1px solid var(--line-2);background:var(--glass);font-size:13px;color:var(--muted);backdrop-filter:blur(8px)}
+.pill .dots{display:flex}.pill .dots .ico{--s:22px;border-radius:7px;margin-left:-6px;box-shadow:0 0 0 2px var(--bg)}.pill .dots .ico:first-child{margin-left:0}
+.hero h1{font-size:clamp(48px,8vw,104px);line-height:.95;letter-spacing:-.055em;margin:26px auto 22px;font-weight:600}
+.hero h1 em{font-style:normal;background:linear-gradient(100deg,var(--text) 10%,var(--accent) 55%,var(--accent-2) 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero.home p{font-size:19px;margin:0 auto;max-width:640px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px;justify-content:center}
+/* app window (hero) */
+.device-wrap{perspective:1800px;margin:64px auto 0;position:relative}
+.device{position:relative;text-align:left;border-radius:var(--r-xl);background:var(--panel);border:1px solid var(--line-2);box-shadow:var(--shadow),0 0 0 8px color-mix(in srgb,var(--panel) 40%,transparent);overflow:hidden;transform:rotateX(var(--tilt,14deg)) scale(var(--sc,.96));transform-origin:50% 0;transition:transform .1s linear}
+.titlebar{display:flex;align-items:center;gap:14px;height:46px;padding:0 16px;border-bottom:1px solid var(--line);background:var(--bg-2)}
+.lights{display:flex;gap:7px}.lights i{width:12px;height:12px;border-radius:50%;background:#ff5f57}.lights i:nth-child(2){background:#febc2e}.lights i:nth-child(3){background:#28c840}
+.addr{margin:0 auto;display:flex;align-items:center;gap:8px;height:28px;padding:0 14px;border-radius:8px;background:var(--panel-2);font-size:12px;color:var(--muted);font-family:var(--mono);white-space:nowrap;overflow:hidden}
+.addr b{color:var(--text);font-weight:500}.addr .id{color:var(--accent)}
+.appwin{display:grid;grid-template-columns:220px 1fr;min-height:520px}
+.side{border-right:1px solid var(--line);padding:14px 10px;background:var(--bg-2);display:flex;flex-direction:column;gap:2px;font-size:13px}
+.side .search{display:flex;align-items:center;gap:8px;height:32px;padding:0 10px;margin-bottom:10px;border-radius:9px;background:var(--panel);border:1px solid var(--line);color:var(--faint);font-size:12px}
+.side .lbl{font-size:11px;color:var(--faint);padding:12px 10px 6px;font-weight:500}
+.side .it{display:flex;align-items:center;gap:10px;padding:6px 10px;border-radius:9px;color:var(--muted)}.side .it.on{background:var(--accent-soft);color:var(--text)}
+.side .it .ico{--s:22px;border-radius:6px}
+.side .me{margin-top:auto;display:flex;align-items:center;gap:10px;padding:10px;border-top:1px solid var(--line);color:var(--muted)}.side .me b{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,#f5b3a0,#c98bd9);display:block}
+.canvas{padding:22px 24px;background:var(--panel);display:flex;flex-direction:column;gap:16px}
+.c-head{display:flex;align-items:center;gap:14px}.c-head h4{margin:0;font-size:20px;font-weight:600;letter-spacing:-.02em}.c-head .id{font-family:var(--mono);font-size:11px;padding:3px 8px;border-radius:6px;background:var(--accent-soft);color:var(--accent)}
+.c-head .avatars{margin-left:auto;display:flex}.c-head .avatars i{width:26px;height:26px;border-radius:50%;border:2px solid var(--panel);margin-left:-8px;background:linear-gradient(135deg,#9bd3ff,#5b7cf0)}.c-head .avatars i:nth-child(2){background:linear-gradient(135deg,#ffd29b,#f08a5b)}.c-head .avatars i:nth-child(3){background:linear-gradient(135deg,#b6f0c6,#3fb47c)}
+.seg{display:flex;gap:4px;padding:4px;border-radius:11px;background:var(--panel-2);width:max-content;font-size:12px}.seg span{padding:6px 12px;border-radius:8px;color:var(--muted)}.seg span.on{background:var(--panel);color:var(--text);box-shadow:var(--card-shadow)}
+.tiles{display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-rows:auto auto;gap:14px;flex:1}
+.tile{border-radius:16px;background:var(--panel-2);border:1px solid var(--line);padding:14px;display:flex;flex-direction:column;gap:10px;font-size:12px;color:var(--muted);min-width:0}
+.tile .th{display:flex;align-items:center;gap:8px;color:var(--text);font-weight:500;font-size:13px}.tile .th small{margin-left:auto;font-weight:400;color:var(--faint);font-size:11px}
+.tile.doc{grid-row:span 2}
+.paper{flex:1;border-radius:10px;background:var(--panel);border:1px solid var(--line);padding:16px}
+.ln{height:7px;border-radius:4px;background:var(--line-2);margin:8px 0}.ln.t{height:12px;width:60%;background:var(--text);opacity:.85;margin-bottom:14px}.ln.a{background:var(--accent);opacity:.5;width:40%}
+.cursor{display:inline-flex;align-items:center;gap:4px;font-size:10px;color:#fff;background:#f08a5b;padding:2px 6px;border-radius:5px;margin-top:6px;animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translate(18px,4px)}}
+.row{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--line);color:var(--text)}.row:last-child{border:0}.row span:last-child{margin-left:auto;color:var(--faint);font-family:var(--mono);font-size:11px}
+.ft{width:20px;height:24px;border-radius:4px;background:var(--accent-soft);border:1px solid var(--line-2);flex:none}
+.big{font-family:var(--mono);font-size:24px;color:var(--text);letter-spacing:-.04em}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:3px 9px;border-radius:999px;font-size:11px;background:var(--ok-soft);color:var(--ok);width:max-content}.badge::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.spark{height:44px;width:100%}
+.spark path.l{fill:none;stroke:var(--accent);stroke-width:2;vector-effect:non-scaling-stroke}.spark path.f{fill:url(#sg);opacity:.5}
+.site-mini{flex:1;border-radius:10px;overflow:hidden;background:linear-gradient(160deg,#1b2340,#2b3c78 60%,#5b7cf0);padding:12px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;min-height:84px}.site-mini b{font-size:14px;font-weight:600}.site-mini span{font-size:10px;opacity:.75}
+/* toasts */
+.toasts{position:absolute;right:20px;top:64px;display:flex;flex-direction:column;gap:10px;z-index:3;width:300px;pointer-events:none}
+.toast{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:16px;background:var(--glass);border:1px solid var(--line-2);backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5);box-shadow:var(--shadow);font-size:13px;opacity:0;transform:translateX(24px) scale(.96);transition:opacity .45s,transform .55s cubic-bezier(.2,.9,.2,1.1)}
+.toast.on{opacity:1;transform:none}.toast b{display:block;font-weight:500;color:var(--text)}.toast span{color:var(--muted);font-size:12px}.toast .ico{--s:34px}
+.caption{font-size:12px;color:var(--faint);margin-top:16px;text-align:center;max-width:none}
+/* sections */
+section.band{padding:120px 0 0}
+.section-head{text-align:center;margin:0 auto 48px;max-width:760px}
+.section-head h2{font-size:clamp(36px,5vw,60px);line-height:1;letter-spacing:-.045em;margin:14px 0 18px}
+.section-head p{margin:0 auto;font-size:17px}
+/* apps grid (shared with /products) */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{position:relative;display:flex;flex-direction:column;gap:6px;padding:24px;min-height:200px;border-radius:var(--r-lg);background:var(--panel);border:1px solid var(--line);box-shadow:var(--card-shadow);transition:transform .25s cubic-bezier(.2,.8,.2,1),border-color .2s,box-shadow .25s;overflow:hidden}
+.card::after{content:"";position:absolute;inset:0;background:radial-gradient(400px circle at var(--mx,50%) var(--my,0%),var(--accent-soft),transparent 45%);opacity:0;transition:opacity .3s;pointer-events:none}
+a.card:hover{transform:translateY(-4px);border-color:var(--line-2)}a.card:hover::after{opacity:1}a.card:hover .ico{transform:scale(1.06) rotate(-3deg)}
+.card .ico{transition:transform .3s cubic-bezier(.2,.8,.2,1);margin-bottom:auto}
+.card h3{margin:22px 0 2px;font-size:20px;letter-spacing:-.02em}
+.card p{font-size:14px;margin:0}
+.card .chip{position:absolute;top:26px;right:24px;font-size:11px;font-weight:500;padding:3px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.section-end{display:flex;width:max-content;margin:28px auto 0;align-items:center;gap:8px;height:44px;padding:0 18px;border-radius:12px;border:1px solid var(--line-2);font-size:14px;background:var(--panel)}.section-end:hover{border-color:var(--accent);color:var(--accent)}
+/* flow */
+.flow{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px;align-items:start}
+.steps{display:flex;flex-direction:column;gap:8px}
+.steps button{display:flex;gap:14px;align-items:flex-start;width:100%;text-align:left;padding:16px;border-radius:var(--r-lg);background:transparent;border:1px solid transparent;cursor:pointer;color:var(--muted);transition:background .2s,border-color .2s,color .2s}
+.steps button:hover{background:var(--panel);color:var(--text)}
+.steps .ico{--s:40px;opacity:.55;transition:opacity .2s}
+.steps strong{display:block;font-weight:600;font-size:17px;letter-spacing:-.01em;color:inherit}
+.steps .app{display:block;font-size:12px;margin-top:2px;color:var(--faint)}
+.steps small{display:block;font-size:14px;line-height:1.5;margin-top:8px;max-height:0;overflow:hidden;opacity:0;transition:max-height .35s,opacity .35s;color:var(--muted)}
+.steps [aria-selected=true]{background:var(--panel);border-color:var(--line-2);color:var(--text);box-shadow:var(--card-shadow)}.steps [aria-selected=true] .ico{opacity:1}.steps [aria-selected=true] small{max-height:90px;opacity:1}
+.viewer{position:sticky;top:96px;border-radius:var(--r-xl);background:var(--panel);border:1px solid var(--line-2);box-shadow:var(--shadow);overflow:hidden}
+.screen{min-height:290px;padding:26px;display:none}.screen.on{display:block;animation:rise .45s cubic-bezier(.2,.8,.2,1)}
+@keyframes rise{from{opacity:0;transform:translateY(10px) scale(.99)}to{opacity:1;transform:none}}
+.screen h4{font-size:22px;font-weight:600;letter-spacing:-.02em;margin:0 0 4px}
+.screen .meta{font-size:13px;color:var(--muted);margin-bottom:20px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cell{border-radius:14px;background:var(--panel-2);border:1px solid var(--line);padding:14px;font-size:13px;color:var(--muted)}.cell .mono{display:block;font-size:22px;margin-top:6px;letter-spacing:-.04em;color:var(--text)}
+.screen .row{padding:11px 0;font-size:14px}
+.ledger{border-top:1px solid var(--line);padding:16px 22px;background:var(--bg-2)}
+.ledger h5{margin:0 0 10px;font-size:12px;color:var(--faint);font-weight:500}
+.ledger ol{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ledger li{display:flex;align-items:center;gap:12px;font-size:13px;color:var(--muted);opacity:.35;transition:opacity .3s,color .3s}.ledger li.done{opacity:1}.ledger li.now{color:var(--text)}
+.ledger li::before{content:"";width:18px;height:18px;border-radius:50%;border:1.5px solid var(--line-2);flex:none;transition:all .3s}
+.ledger li.done::before{background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='white' stroke-width='2.2'%3E%3Cpath d='m4 8.5 2.5 2.5L12 5.5'/%3E%3C/svg%3E") center/12px no-repeat;border-color:var(--accent)}
+.flow-nav{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+.flow-nav button{height:36px;padding:0 14px;border-radius:10px;background:var(--panel-2);border:1px solid var(--line);cursor:pointer}.flow-nav button:hover:not(:disabled){border-color:var(--line-2)}.flow-nav button:disabled{opacity:.4;cursor:default}
+.flow-nav #next{background:var(--accent-deep);border-color:transparent;color:#fff}
+/* audiences */
+.tabs{display:flex;gap:4px;padding:5px;border-radius:14px;background:var(--panel);border:1px solid var(--line);width:max-content;max-width:100%;margin:0 auto;box-shadow:var(--card-shadow)}
+.tabs button{border:0;background:none;padding:10px 20px;border-radius:10px;font-size:14px;color:var(--muted);cursor:pointer;transition:background .2s,color .2s}.tabs button[aria-selected=true]{background:var(--accent-deep);color:#fff}
+.aud{display:none;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px;align-items:stretch}.aud.on{display:grid;animation:rise .45s cubic-bezier(.2,.8,.2,1)}
+.aud>div{border-radius:var(--r-xl);padding:36px;background:radial-gradient(600px circle at 0% 0%,var(--accent-soft),transparent 60%),var(--panel);border:1px solid var(--line)}
+.aud h3{font-size:clamp(28px,3.2vw,40px);letter-spacing:-.04em;line-height:1.05;margin:0 0 16px}
+.aud ul{list-style:none;margin:0;padding:8px;border-radius:var(--r-xl);background:var(--panel);border:1px solid var(--line);display:flex;flex-direction:column;gap:4px}
+.aud li a{display:flex;align-items:center;gap:14px;padding:14px;border-radius:16px;font-size:15px;transition:background .2s}.aud li a:hover{background:var(--panel-2)}.aud li a .go{margin-left:auto;font-size:12px;color:var(--faint);white-space:nowrap}
+/* /products catalog (generated from this head) */
+.catalog-hero h1{font-size:clamp(44px,6vw,72px);margin:20px 0}.catalog-note{font-size:15px}
+.catalog-jumps{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}.catalog-jumps a{font-size:13px;padding:8px 14px;border-radius:999px;border:1px solid var(--line-2);background:var(--panel);color:var(--muted)}.catalog-jumps a:hover{color:var(--accent);border-color:var(--accent)}
+.apps.catalog-group{padding:0 0 64px}.catalog-group .eyebrow{display:none}.catalog-group h2{font-size:28px;letter-spacing:-.03em;margin:0 0 20px}
+.product{min-height:300px}.product h3{margin:0 0 8px}
+.product-meta{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:var(--muted);margin-bottom:18px}.product-meta span{padding:2px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.outcome{border-top:1px solid var(--line);margin-top:20px;padding-top:16px}.outcome .eyebrow{font-size:11px;letter-spacing:.6px}.outcome p{margin-top:6px;font-size:14px}
+.product-link{color:var(--accent);font-size:14px;margin-top:auto;padding-top:20px;font-weight:500}
+/* footer (generated by scripts/build-app-catalog.cjs) */
+.sitemap{margin:140px auto 16px;width:min(1180px,calc(100% - 24px));padding:44px 40px 24px;border-radius:var(--r-xl);background:var(--panel);border:1px solid var(--line)}
+.footer-top{display:flex;align-items:center;gap:28px;flex-wrap:wrap}.footer-top p{font-size:14px;flex:1;margin:0}.footer-top>a:last-child{color:var(--accent);font-size:14px}
+.sitemap-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:28px;margin:40px 0}
+.sitemap h3{font-size:12px;color:var(--faint);font-weight:500;margin:0 0 14px}
+.sitemap-grid a,.sitemap-grid span{display:block;margin:10px 0;font-size:14px}
+.sitemap small{display:block;font-size:11px;color:var(--faint);margin-top:2px}
+.sitemap-grid a:hover{color:var(--accent)}
+.legend{font-size:12px;line-height:2;color:var(--faint);border-top:1px solid var(--line);padding:16px 0}
+.footer-bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:10px;font-size:13px;color:var(--muted)}.footer-bottom a:hover{color:var(--text)}
+/* finder */
+dialog.finder{width:min(600px,calc(100% - 32px));padding:0;border-radius:22px;border:1px solid var(--line-2);background:var(--glass);backdrop-filter:blur(30px) saturate(1.6);-webkit-backdrop-filter:blur(30px) saturate(1.6);color:var(--text);box-shadow:0 40px 100px -20px rgba(0,0,0,.6);margin-top:14vh}
+dialog.finder::backdrop{background:rgba(5,6,10,.4);backdrop-filter:blur(4px)}
+.finder input{width:100%;border:0;border-bottom:1px solid var(--line);background:none;color:var(--text);font:inherit;font-size:19px;padding:20px 22px;outline:none}
+.finder ul{list-style:none;margin:0;padding:8px;max-height:min(420px,55vh);overflow:auto}
+.finder li a{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;font-size:15px}.finder li a small{margin-left:auto;font-size:12px;color:var(--muted)}
+.finder li a[aria-selected=true]{background:var(--accent-deep);color:#fff}.finder li a[aria-selected=true] small{color:rgba(255,255,255,.75)}
+.finder .empty{padding:18px 14px;color:var(--muted);font-size:14px}
+.finder .finder-keys{display:flex;gap:16px;padding:10px 18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}.js .reveal.in{opacity:1;transform:none}
+@media(max-width:960px){header nav{display:none}.find{min-width:0;margin-left:auto}.appwin{grid-template-columns:1fr}.side{display:none}.tiles{grid-template-columns:1fr 1fr}.tile.doc{grid-row:auto;grid-column:span 2}.flow,.aud.on{grid-template-columns:1fr}.viewer{position:static}.grid{grid-template-columns:repeat(2,1fr)}.sitemap-grid{grid-template-columns:repeat(3,1fr)}.toasts{width:260px}}
+@media(max-width:620px){header{gap:10px;padding-left:14px}.find span,.find kbd{display:none}.find{padding:0 12px}.brand{font-size:16px}.hero.home{padding-top:64px}.hero.home p{font-size:17px}.device{transform:none!important;border-radius:20px}.appwin{min-height:0}.canvas{padding:16px}.tiles{grid-template-columns:1fr}.tile.doc{grid-column:auto}.toasts{left:12px;right:12px;width:auto;top:auto;bottom:12px}.toast:not(.on){display:none}.grid{grid-template-columns:1fr}.card{min-height:170px}section.band{padding-top:88px}.sitemap{padding:32px 20px 20px}.sitemap-grid{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}.screen{padding:20px}.tabs{width:100%}.tabs button{flex:1;padding:10px 6px}.aud>div{padding:26px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.js .reveal{opacity:1;transform:none}.device{transform:none!important}.toast{opacity:1;transform:none}}
+</style>
+<script defer>
+document.documentElement.classList.add('js');
+addEventListener('DOMContentLoaded',()=>{
+  // Finder: searches every entry in the generated sitemap, so it always matches the catalog.
+  const entries=[...document.querySelectorAll('.sitemap-grid > div')].flatMap(g=>{const group=g.querySelector('h3')?.textContent||'';return[...g.querySelectorAll('a')].map(a=>({name:a.childNodes[0].textContent.trim(),meta:group,href:a.href}))});
+  const dlg=document.createElement('dialog');dlg.className='finder';dlg.setAttribute('aria-label','Find an AXXES product');
+  dlg.innerHTML='<input type="search" placeholder="Find a product, service or brand" aria-label="Search products" autocomplete="off" role="combobox" aria-expanded="true" aria-controls="finder-list"><ul id="finder-list" role="listbox"></ul><div class="finder-keys"><span><kbd>↑</kbd> <kbd>↓</kbd> move</span><span><kbd>↵</kbd> open</span><span><kbd>esc</kbd> close</span></div>';
+  document.body.append(dlg);
+  const input=dlg.querySelector('input'),list=dlg.querySelector('ul');let shown=[],sel=0;
+  const render=()=>{const q=input.value.trim().toLowerCase();shown=entries.filter(e=>(e.name+' '+e.meta).toLowerCase().includes(q));sel=Math.min(sel,Math.max(shown.length-1,0));
+    list.innerHTML=shown.length?'':'<li class="empty">Nothing matches. Try “files”, “site” or “pay”.</li>';
+    shown.forEach((e,i)=>{const li=document.createElement('li'),a=document.createElement('a');a.href=e.href;a.role='option';a.setAttribute('aria-selected',i===sel);const ic=document.createElement('span');ic.className='ico md';ic.style.fontWeight='700';ic.textContent=e.name[0];a.append(ic,e.name);const s=document.createElement('small');s.textContent=e.meta;a.append(s);li.append(a);list.append(li)});
+    list.querySelector('[aria-selected=true]')?.scrollIntoView({block:'nearest'})};
+  const open=()=>{if(!entries.length)return;input.value='';sel=0;render();dlg.showModal();input.focus()};
+  input.addEventListener('input',()=>{sel=0;render()});
+  input.addEventListener('keydown',e=>{if(e.key==='ArrowDown'){sel=Math.min(sel+1,shown.length-1);render();e.preventDefault()}else if(e.key==='ArrowUp'){sel=Math.max(sel-1,0);render();e.preventDefault()}else if(e.key==='Enter'&&shown[sel]){location.href=shown[sel].href}});
+  dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+  document.querySelectorAll('[data-find]').forEach(b=>{if(entries.length)b.addEventListener('click',open);else b.remove()});
+  addEventListener('keydown',e=>{if(dlg.open)return;const typing=/input|textarea|select/i.test(document.activeElement.tagName);if((e.key==='k'&&(e.metaKey||e.ctrlKey))||(e.key==='/'&&!typing)){e.preventDefault();open()}});
+  // Card spotlight follows the pointer
+  document.querySelectorAll('.card').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',e.clientX-r.left+'px');c.style.setProperty('--my',e.clientY-r.top+'px')}));
+  const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+});
+</script>
 </head>
 <body>
-<header><a class="brand" href="https://axxes.app/" aria-label="AXXES.app home">AXXES<span>.app</span></a><nav aria-label="Main navigation"><a href="/products">Products</a><a href="https://cloud.axxes.app">Cloud ↗</a><a href="https://payments.axxes.app">Payments ↗</a></nav></header>
-<main><section class="hero"><span class="eyebrow">FOR EVERYTHING YOU RUN</span><h1>One account.<br>Everything connected.</h1><p>Documents, files, websites, collections and payments. A family of tools for you, your practice or your company.</p><a class="button" href="/products">Explore your apps →</a></section>
-<section class="story" aria-labelledby="story-title"><div><span class="eyebrow">WHAT IS AXXES?</span><h2 id="story-title">More room for<br>your world.</h2><p>AXXES is a family of apps, services and brands for the things you make, manage and care about.</p><p>Write a proposal. Organize a collection. Publish a website. Keep a client matter moving. Start with the tool you need, with an AXXES account at the center.</p></div><div class="audience-content" aria-live="off"><div class="audiences" aria-hidden="true"><span>FOR YOU</span><span>FOR WORK</span><span>FOR LIFE</span></div><article class="audience-panel"><h3>Make something yours.</h3><p>A place for your ideas, files and next project. Give what matters to you a little more structure, and a little more room to grow.</p><ul><li>Shape ideas in AXXES.work</li><li>Keep your files together in Folders</li><li>Put your project on the web with Atelier</li></ul></article><article class="audience-panel"><h3>Move good work forward.</h3><p>Tools for the practical side of running a team, a practice or a business. From the first document to the next decision.</p><ul><li>Create proposals, budgets and presentations</li><li>Organize tasks, knowledge and shared files</li><li>Manage client matters and business websites</li></ul></article><article class="audience-panel"><h3>Keep what matters close.</h3><p>The records, objects and stories that make up your life deserve a home of their own. Keep them organized and easier to return to.</p><ul><li>Preserve collection histories with Vitrine</li><li>Organize personal records in Folders</li><li>Keep documents and acknowledgements in Matter</li></ul></article><button class="rotation-control" type="button" hidden>Pause rotation</button></div></section>
-<section class="apps" id="apps"><span class="eyebrow">YOUR AXXES APPS</span><h2>Make room for what you do.</h2><div class="grid">
-<a class="card" href="https://axxes.work"><span class="arrow">↗</span><h3>AXXES.work</h3><p>Documents, spreadsheets and presentations, together in your workspace.</p></a>
-<a class="card" href="https://folders.axxes.app"><span class="arrow">↗</span><h3>Folders</h3><p>Keep your files and digital assets organized.</p></a>
-<a class="card" href="https://atelier.axxes.app"><span class="arrow">↗</span><h3>Atelier</h3><p>Create and manage your websites.</p></a>
-<a class="card" href="https://vitrine.axxes.app"><span class="arrow">↗</span><h3>Vitrine</h3><p>A home for your collection and the stories behind it.</p></a>
-<a class="card" href="https://matter.axxes.app"><span class="arrow">↗</span><h3>Matter</h3><p>Keep client matters, documents and agreements together.</p></a>
-<a class="card" href="https://cloud.axxes.app"><span class="arrow">↗</span><h3>AXXES Cloud</h3><p>A console for the infrastructure behind your AXXES environment.</p></a>
-</div><a class="section-end" href="/products">All products, services & brands →</a></section></main>
-<footer class="sitemap"><div class="footer-top"><a class="brand" href="/">AXXES<span>.app</span></a><p>A family of products, services and brands. Find your next step.</p><a href="/products">Explore the full catalog →</a></div><div class="sitemap-grid"><div><h3>Work &amp; collaboration</h3><a href="https://axxes.work">AXXES.work <small>Product · Beta</small></a><a href="https://folders.axxes.app">Folders <small>Product</small></a><a href="https://lanes.axxes.app">Lanes <small>Product · Beta</small></a><a href="https://relay.axxes.club">Relay <small>Product · Beta</small></a><a href="https://nexus.axxes.club">Nexus <small>Product · Beta</small></a><span>AXXES Mail &amp; Workspace <small>In development</small></span></div><div><h3>Create &amp; manage</h3><a href="https://atelier.axxes.app">Atelier <small>Product</small></a><a href="https://vitrine.axxes.app">Vitrine <small>Product / brand · Beta</small></a><a href="https://matter.axxes.app">Matter <small>Product · Beta</small></a><a href="https://manifest.axxes.club">Stock <small>Product · Beta</small></a><a href="https://pulse.axxes.app">Pulse <small>Product · Beta</small></a></div><div><h3>Payments &amp; services</h3><a href="https://tollbooth.axxes.club">AXXES Pay <small>Product · Beta</small></a><a href="https://payments.axxes.app">AXXES Payments <small>Service</small></a><a href="https://handshake.axxes.club">AXXES Account <small>Service</small></a><span>Binnacle <small>In development</small></span></div><div><h3>Develop &amp; build</h3><a href="https://cloud.axxes.app">AXXES Cloud <small>Service</small></a><a href="https://axxes.dev">AXXES.dev <small>Service · Beta</small></a><a href="https://axxes.dev">AXXES API <small>Service</small></a><span>Keel <small>In development</small></span></div><div><h3>Independent brands</h3><a href="https://afters.am">afters.am <small>Brand</small></a><a href="https://vibez.axxes.club">Vibez <small>Brand · Beta</small></a><a href="https://qortr.app">Qortr <small>Brand · Beta</small></a></div><div><h3>Custom &amp; operations</h3><span>Krates <small>Custom</small></span><span>AXXES WebMaster <small>Internal</small></span></div></div><div class="legend">Product · an app for a specific task &nbsp; Service · a shared capability &nbsp; Brand · its own experience<br>Beta · still evolving &nbsp; In development · coming later &nbsp; Custom · tailored for an organization &nbsp; Internal · platform operations</div><div class="footer-bottom"><a href="/products">Products, services & brands</a><span>AXXES — everything reconciles.</span></div></footer>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="g-work" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 2h7l3 3v11H4z"/><path d="M7 8h5M7 11h5M7 14h3"/></symbol>
+<symbol id="g-folders" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M2 4.5h5l2 2h7V15H2z"/></symbol>
+<symbol id="g-atelier" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="2" y="3" width="14" height="12" rx="2"/><path d="M2 6.5h14M5 10h5M5 12.5h7"/></symbol>
+<symbol id="g-vitrine" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="3" y="2" width="12" height="14" rx="1.5"/><path d="M5.5 12.5l2.7-3.2 2 2 1.8-2"/></symbol>
+<symbol id="g-toll" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M2 5h14v3a1.5 1.5 0 0 0 0 3v3H2v-3a1.5 1.5 0 0 0 0-3z"/><path d="M11 5v9" stroke-dasharray="1.5 1.6"/></symbol>
+<symbol id="g-lanes" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="2" y="3" width="4" height="12" rx="1"/><rect x="7" y="3" width="4" height="8" rx="1"/><rect x="12" y="3" width="4" height="10" rx="1"/></symbol>
+<symbol id="g-pulse" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M2 9.5h3l2-5 3.5 9 2-4H16"/></symbol>
+</defs></svg>
+<header><a class="brand" href="https://axxes.app/" aria-label="AXXES.app home"><span class="ico" aria-hidden="true">A</span>AXXES<span>.app</span></a><nav aria-label="Main navigation"><a href="/products">Products</a><a href="/#apps">Apps</a><a href="/#how">How it connects</a></nav><button class="find" type="button" data-find><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="m11 11 3.5 3.5"/></svg><span>Find a product</span><kbd>/</kbd></button><a class="account" href="https://handshake.axxes.club/profile">Account</a></header>
+<main>
+<section class="hero home">
+  <span class="pill"><span class="dots" aria-hidden="true"><span class="ico"><svg><use href="#g-work"/></svg></span><span class="ico alt2"><svg><use href="#g-folders"/></svg></span><span class="ico alt"><svg><use href="#g-atelier"/></svg></span><span class="ico"><svg><use href="#g-toll"/></svg></span></span>AXXES · apps, services and brands</span>
+  <h1><em>Everything</em><br>reconciles.</h1>
+  <p>Documents, files, websites, payments, collections and an API to build on all of it. A family of apps, services and brands built as one system, so your work never disagrees with itself.</p>
+  <div class="actions"><a class="button" href="/products">Explore the apps <span aria-hidden="true">→</span></a><a class="button ghost" href="#how">See how it connects</a></div>
+
+  <div class="device-wrap" aria-hidden="true">
+    <div class="device" id="device">
+      <div class="titlebar"><span class="lights"><i></i><i></i><i></i></span><span class="addr">Harbor Street studio · <span class="id">PRJ-0142</span></span></div>
+      <div class="appwin">
+        <aside class="side">
+          <div class="search">⌕ Search everything</div>
+          <div class="it on"><span class="ico sm"><svg><use href="#g-lanes"/></svg></span>Harbor Street studio</div>
+          <div class="lbl">All Apps</div>
+          <div class="it"><span class="ico sm"><svg><use href="#g-work"/></svg></span>AXXES.work</div>
+          <div class="it"><span class="ico sm alt2"><svg><use href="#g-folders"/></svg></span>Folders</div>
+          <div class="it"><span class="ico sm alt"><svg><use href="#g-atelier"/></svg></span>Atelier</div>
+          <div class="it"><span class="ico sm alt2"><svg><use href="#g-vitrine"/></svg></span>Vitrine</div>
+          <div class="it"><span class="ico sm"><svg><use href="#g-toll"/></svg></span>Tollbooth</div>
+          <div class="it"><span class="ico sm alt"><svg><use href="#g-pulse"/></svg></span>Pulse</div>
+          <div class="it"><span class="ico sm"><svg><use href="#g-lanes"/></svg></span>Lanes</div>
+          <div class="me"><b></b>Your account</div>
+        </aside>
+        <div class="canvas">
+          <div class="c-head"><h4>Harbor Street studio</h4><span class="id">PRJ-0142</span><span class="avatars"><i></i><i></i><i></i></span></div>
+          <div class="seg"><span class="on">Overview</span><span>Files</span><span>Site</span><span>Payments</span></div>
+          <div class="tiles">
+            <div class="tile doc"><div class="th"><span class="ico sm"><svg><use href="#g-work"/></svg></span>Proposal v3<small>AXXES.work</small></div><div class="paper"><div class="ln t"></div><div class="ln"></div><div class="ln" style="width:92%"></div><div class="ln" style="width:85%"></div><div class="ln a"></div><div class="ln" style="width:95%"></div><div class="ln" style="width:70%"></div><span class="cursor">Client</span><div class="ln" style="width:88%"></div><div class="ln" style="width:60%"></div></div></div>
+            <div class="tile"><div class="th"><span class="ico sm alt2"><svg><use href="#g-folders"/></svg></span>Files<small>Folders</small></div><div class="row"><i class="ft"></i>Floor plan.pdf<span>2.1 MB</span></div><div class="row"><i class="ft"></i>Budget.xlsx<span>31 KB</span></div><div class="row"><i class="ft"></i>Site photos<span>24</span></div></div>
+            <div class="tile"><div class="th"><span class="ico sm"><svg><use href="#g-toll"/></svg></span>Deposit<small>Tollbooth</small></div><div class="big">$1,200.00</div><span class="badge">Paid</span></div>
+            <div class="tile"><div class="th"><span class="ico sm alt"><svg><use href="#g-atelier"/></svg></span>Site<small>Atelier</small></div><div class="site-mini"><b>harborstreet.studio</b><span>Published</span></div></div>
+            <div class="tile"><div class="th"><span class="ico sm alt"><svg><use href="#g-pulse"/></svg></span>Visits<small>Pulse</small></div><div class="big">312</div><svg class="spark" viewBox="0 0 100 30" preserveAspectRatio="none"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6e95f2"/><stop offset="1" stop-color="#6e95f2" stop-opacity="0"/></linearGradient></defs><path class="f" d="M0 24 L12 20 L24 22 L36 14 L48 16 L60 9 L72 12 L84 5 L100 7 L100 30 L0 30Z"/><path class="l" d="M0 24 L12 20 L24 22 L36 14 L48 16 L60 9 L72 12 L84 5 L100 7"/></svg></div>
+          </div>
+        </div>
+      </div>
+      <div class="toasts" id="toasts">
+        <div class="toast"><span class="ico"><svg><use href="#g-work"/></svg></span><div><b>Proposal v3 opened</b><span>AXXES.work · by your client</span></div></div>
+        <div class="toast"><span class="ico alt2"><svg><use href="#g-folders"/></svg></span><div><b>4 files shared</b><span>Folders · Harbor Street studio</span></div></div>
+        <div class="toast"><span class="ico"><svg><use href="#g-toll"/></svg></span><div><b>Deposit paid · $1,200.00</b><span>Tollbooth · matched to PRJ-0142</span></div></div>
+      </div>
+    </div>
+  </div>
+  <p class="caption">Illustration with a sample project</p>
+</section>
+
+<section class="band apps" id="apps" aria-labelledby="apps-title">
+  <div class="section-head reveal"><span class="eyebrow">Your AXXES apps</span><h2 id="apps-title">Start with the one you need.</h2><p>Every app signs in with the same AXXES account and shares the same records. Press <kbd>/</kbd> anywhere to find one.</p></div>
+  <div class="grid reveal">
+    <a class="card" href="https://axxes.work"><span class="ico lg"><svg><use href="#g-work"/></svg></span><span class="chip">Beta</span><h3>AXXES.work</h3><p>Documents, spreadsheets and presentations, together in your workspace.</p></a>
+    <a class="card" href="https://folders.axxes.app"><span class="ico lg alt2"><svg><use href="#g-folders"/></svg></span><h3>Folders</h3><p>Keep your files and digital assets organized.</p></a>
+    <a class="card" href="https://atelier.axxes.app"><span class="ico lg alt"><svg><use href="#g-atelier"/></svg></span><h3>Atelier</h3><p>Create and manage your websites.</p></a>
+    <a class="card" href="https://vitrine.axxes.app"><span class="ico lg alt2"><svg><use href="#g-vitrine"/></svg></span><span class="chip">Beta</span><h3>Vitrine</h3><p>A home for your collection and the stories behind it.</p></a>
+    <a class="card" href="https://tollbooth.axxes.club"><span class="ico lg"><svg><use href="#g-toll"/></svg></span><span class="chip">Beta</span><h3>Tollbooth</h3><p>Payment links, checkout and payouts for your own customers.</p></a>
+    <a class="card" href="https://lanes.axxes.app"><span class="ico lg alt"><svg><use href="#g-lanes"/></svg></span><span class="chip">Beta</span><h3>Lanes</h3><p>Boards for organizing work and its next steps.</p></a>
+  </div>
+  <a class="section-end" href="/products">All products, services & brands →</a>
+</section>
+
+<section class="band" id="how" aria-labelledby="how-title">
+  <div class="section-head reveal"><span class="eyebrow">How it connects</span><h2 id="how-title">One project, start to finish.</h2><p>Each app does one job. Because they run on one system, the proposal, the files, the page, the payment and the numbers all point at the same record.</p></div>
+  <div class="flow reveal">
+    <div role="tablist" aria-label="Project steps" aria-orientation="vertical" class="steps">
+      <button role="tab" id="t1" aria-controls="s1" aria-selected="true"><span class="ico"><svg><use href="#g-work"/></svg></span><span><strong>Write the proposal</strong><span class="app">AXXES.work</span><small>Draft the scope, the budget and the deck in documents your client can open.</small></span></button>
+      <button role="tab" id="t2" aria-controls="s2" aria-selected="false" tabindex="-1"><span class="ico alt2"><svg><use href="#g-folders"/></svg></span><span><strong>Keep the files together</strong><span class="app">Folders</span><small>Plans, photos and versions live in one folder, shared with the people who need them.</small></span></button>
+      <button role="tab" id="t3" aria-controls="s3" aria-selected="false" tabindex="-1"><span class="ico alt"><svg><use href="#g-atelier"/></svg></span><span><strong>Publish the page</strong><span class="app">Atelier</span><small>Put the project on the web with your own domain.</small></span></button>
+      <button role="tab" id="t4" aria-controls="s4" aria-selected="false" tabindex="-1"><span class="ico"><svg><use href="#g-toll"/></svg></span><span><strong>Get paid</strong><span class="app">Tollbooth · Beta</span><small>Send a payment link. The deposit lands against the same project.</small></span></button>
+      <button role="tab" id="t5" aria-controls="s5" aria-selected="false" tabindex="-1"><span class="ico alt"><svg><use href="#g-pulse"/></svg></span><span><strong>See what happened</strong><span class="app">Pulse · Beta</span><small>Who opened the proposal, visited the page and paid, in one view.</small></span></button>
+    </div>
+    <div class="viewer" aria-live="polite">
+      <div class="titlebar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><span class="addr">Harbor Street studio / <b id="crumb-app">AXXES.work</b> / <span class="id">PRJ-0142</span></span></div>
+      <div class="screen on" id="s1" role="tabpanel" aria-labelledby="t1"><h4>Proposal v3</h4><div class="meta">Quill · edited by 2 people</div><div class="grid2"><div class="cell">Scope<span class="mono">6 rooms</span></div><div class="cell">Budget (Tally)<span class="mono">$14,800.00</span></div><div class="cell">Deck (Stage)<span class="mono">12 slides</span></div><div class="cell">Formats<span class="mono">.docx .xlsx .pptx</span></div></div></div>
+      <div class="screen" id="s2" role="tabpanel" aria-labelledby="t2"><h4>Harbor Street studio</h4><div class="meta">Folders · shared with 1 client</div><div class="row"><i class="ft"></i>Proposal v3.docx<span>48 KB</span></div><div class="row"><i class="ft"></i>Budget.xlsx<span>31 KB</span></div><div class="row"><i class="ft"></i>Floor plan.pdf<span>2.1 MB</span></div><div class="row"><i class="ft"></i>Site photos<span>24 items</span></div></div>
+      <div class="screen" id="s3" role="tabpanel" aria-labelledby="t3"><h4>harborstreet.studio</h4><div class="meta">Atelier · published</div><div class="site-mini" style="min-height:190px;border-radius:16px;padding:22px"><b style="font-size:22px">Harbor Street studio</b><span style="font-size:12px">Interiors · sample site</span></div></div>
+      <div class="screen" id="s4" role="tabpanel" aria-labelledby="t4"><h4>Deposit</h4><div class="meta">Tollbooth · payment link</div><div class="grid2"><div class="cell">Amount<span class="mono">$1,200.00</span></div><div class="cell">Status<span class="mono" style="color:var(--ok)">Paid</span></div><div class="cell">Matched to<span class="mono">PRJ-0142</span></div><div class="cell">Remaining<span class="mono">$13,600.00</span></div></div></div>
+      <div class="screen" id="s5" role="tabpanel" aria-labelledby="t5"><h4>Harbor Street studio</h4><div class="meta">Pulse · last 7 days</div><div class="grid2"><div class="cell">Page visits<span class="mono">312</span></div><div class="cell">Proposal opens<span class="mono">4</span></div><div class="cell">Payment link views<span class="mono">3</span></div><div class="cell">Paid<span class="mono">$1,200.00</span></div></div></div>
+      <div class="ledger"><h5>Project record</h5><ol id="ledger"><li>Proposal v3 saved</li><li>4 files shared with client</li><li>Project page published</li><li>Deposit paid and matched</li><li>Activity summarized in Pulse</li></ol></div>
+      <div class="flow-nav"><button type="button" id="prev">← Back</button><span class="mono" id="count">1 / 5</span><button type="button" id="next">Next step →</button></div>
+    </div>
+  </div>
+  <p class="caption">Sample project. Your own work shows up the same way.</p>
+</section>
+
+<section class="band" aria-labelledby="who-title">
+  <div class="section-head reveal"><span class="eyebrow">Who it’s for</span><h2 id="who-title">More room for your world.</h2><p>AXXES is a family of apps, services and brands for the things you make, manage and care about.</p></div>
+  <div class="reveal">
+    <div class="tabs" role="tablist" aria-label="Audiences"><button role="tab" id="a1" aria-controls="p1" aria-selected="true">For you</button><button role="tab" id="a2" aria-controls="p2" aria-selected="false" tabindex="-1">For work</button><button role="tab" id="a3" aria-controls="p3" aria-selected="false" tabindex="-1">For life</button></div>
+    <div class="aud on" id="p1" role="tabpanel" aria-labelledby="a1"><div><h3>Make something yours.</h3><p>A place for your ideas, files and next project. Give what matters to you a little more structure, and a little more room to grow.</p></div><ul><li><a href="https://axxes.work"><span class="ico md"><svg><use href="#g-work"/></svg></span>Shape ideas in AXXES.work<span class="go">Beta ↗</span></a></li><li><a href="https://folders.axxes.app"><span class="ico md alt2"><svg><use href="#g-folders"/></svg></span>Keep your files together in Folders<span class="go">↗</span></a></li><li><a href="https://atelier.axxes.app"><span class="ico md alt"><svg><use href="#g-atelier"/></svg></span>Put your project on the web with Atelier<span class="go">↗</span></a></li></ul></div>
+    <div class="aud" id="p2" role="tabpanel" aria-labelledby="a2"><div><h3>Move good work forward.</h3><p>Tools for the practical side of running a team, a practice or a business. From the first document to the next decision.</p></div><ul><li><a href="https://axxes.work"><span class="ico md"><svg><use href="#g-work"/></svg></span>Create proposals, budgets and presentations<span class="go">Beta ↗</span></a></li><li><a href="https://lanes.axxes.app"><span class="ico md alt"><svg><use href="#g-lanes"/></svg></span>Organize tasks on shared boards<span class="go">Beta ↗</span></a></li><li><a href="https://tollbooth.axxes.club"><span class="ico md"><svg><use href="#g-toll"/></svg></span>Collect payments from your customers with Tollbooth<span class="go">Beta ↗</span></a></li></ul></div>
+    <div class="aud" id="p3" role="tabpanel" aria-labelledby="a3"><div><h3>Keep what matters close.</h3><p>The records, objects and stories that make up your life deserve a home of their own. Keep them organized and easier to return to.</p></div><ul><li><a href="https://vitrine.axxes.app"><span class="ico md alt2"><svg><use href="#g-vitrine"/></svg></span>Preserve collection histories with Vitrine<span class="go">Beta ↗</span></a></li><li><a href="https://folders.axxes.app"><span class="ico md alt2"><svg><use href="#g-folders"/></svg></span>Organize personal records in Folders<span class="go">↗</span></a></li><li><a href="https://atelier.axxes.app"><span class="ico md alt"><svg><use href="#g-atelier"/></svg></span>Give your family or collection a site with Atelier<span class="go">↗</span></a></li></ul></div>
+  </div>
+</section></main>
+<footer class="sitemap"><div class="footer-top"><a class="brand" href="/">AXXES<span>.app</span></a><p>A family of products, services and brands. Find your next step.</p><a href="/products">Explore the full catalog →</a></div><div class="sitemap-grid"><div><h3>Work &amp; collaboration</h3><a href="https://axxes.work">AXXES.work <small>Product · Beta</small></a><a href="https://folders.axxes.app">Folders <small>Product</small></a><a href="https://lanes.axxes.app">Lanes <small>Product · Beta</small></a><a href="https://relay.axxes.club">Relay <small>Product · Beta</small></a><a href="https://nexus.axxes.club">Nexus <small>Product · Beta</small></a></div><div><h3>Create &amp; manage</h3><a href="https://atelier.axxes.app">Atelier <small>Product</small></a><a href="https://vitrine.axxes.app">Vitrine <small>Product / brand · Beta</small></a><a href="https://pulse.axxes.app">Pulse <small>Product · Beta</small></a></div><div><h3>Payments</h3><a href="https://tollbooth.axxes.club">Tollbooth <small>Product · Beta</small></a></div><div><h3>Develop &amp; build</h3><a href="https://axxes.dev">AXXES.dev <small>Service · Beta</small></a><a href="https://axxes.dev">AXXES API <small>Service</small></a></div><div><h3>Independent brands</h3><a href="https://afters.am">afters.am <small>Brand</small></a><a href="https://vibez.axxes.club">Vibez <small>Brand · Beta</small></a><a href="https://qortr.app">Qortr <small>Brand · Beta</small></a></div></div><div class="legend">Product · an app for a specific task &nbsp; Service · a shared capability &nbsp; Brand · its own experience<br>Beta · still evolving</div><div class="footer-bottom"><a href="/products">Products, services & brands</a><a href="https://handshake.axxes.club/profile">Manage account</a><span>AXXES — everything reconciles.</span></div></footer>
 <script>
-(()=>{const section=document.querySelector('.story'),container=document.querySelector('.audience-content'),panels=[...document.querySelectorAll('.audience-panel')],labels=[...document.querySelectorAll('.audiences span')];if(!section)return;const motion=matchMedia('(prefers-reduced-motion: reduce)');const control=document.querySelector('.rotation-control');let active=0,elapsed=0,last=0,visible=false,paused=false;control.addEventListener('click',()=>{paused=!paused;control.textContent=paused?'Resume rotation':'Pause rotation';control.setAttribute('aria-pressed',String(paused))});function display(){const rotate=!motion.matches;control.hidden=!rotate;container.classList.toggle('rotating',rotate);panels.forEach((p,i)=>p.hidden=rotate&&i!==active);labels.forEach((p,i)=>p.classList.toggle('is-active',rotate&&i===active));container.style.setProperty('--progress',elapsed/8000)}function tick(now){if(last&&visible&&!document.hidden&&!motion.matches&&!paused){elapsed+=Math.min(now-last,100);if(elapsed>=8000){active=(active+1)%panels.length;elapsed=0;display()}container.style.setProperty('--progress',elapsed/8000)}last=now;requestAnimationFrame(tick)}new IntersectionObserver(entries=>visible=entries[0].isIntersecting,{threshold:.2}).observe(section);motion.addEventListener('change',()=>{elapsed=0;display()});display();requestAnimationFrame(tick)})();
-</script></body></html>
+(()=>{
+  // Generic accessible tabs: click, arrow keys, Home/End.
+  function tabs(list,onChange){const ts=[...list.querySelectorAll('[role=tab]')];const pick=(i,focus)=>{ts.forEach((t,j)=>{const on=i===j;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;document.getElementById(t.getAttribute('aria-controls')).classList.toggle('on',on)});if(focus)ts[i].focus();onChange&&onChange(i)};
+    ts.forEach((t,i)=>{t.addEventListener('click',()=>pick(i));t.addEventListener('keydown',e=>{const k={ArrowDown:1,ArrowRight:1,ArrowUp:-1,ArrowLeft:-1}[e.key];if(k){e.preventDefault();pick((i+k+ts.length)%ts.length,true)}else if(e.key==='Home'){e.preventDefault();pick(0,true)}else if(e.key==='End'){e.preventDefault();pick(ts.length-1,true)}})});return pick}
+  const apps=['AXXES.work','Folders','Atelier','Tollbooth','Pulse'];
+  const items=[...document.querySelectorAll('#ledger li')],prev=document.getElementById('prev'),next=document.getElementById('next');let step=0;
+  const go=tabs(document.querySelector('.steps'),i=>{step=i;document.getElementById('crumb-app').textContent=apps[i];document.getElementById('count').textContent=(i+1)+' / 5';items.forEach((li,j)=>{li.classList.toggle('done',j<=i);li.classList.toggle('now',j===i)});prev.disabled=i===0;next.disabled=i===4});
+  prev.onclick=()=>go(step-1);next.onclick=()=>go(step+1);go(0);
+  tabs(document.querySelector('.tabs'));
+  const device=document.getElementById('device'),toasts=[...document.querySelectorAll('#toasts .toast')];
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){toasts.forEach(t=>t.classList.add('on'));return}
+  // Hero window settles flat as you scroll
+  const settle=()=>{const p=Math.min(Math.max(scrollY/420,0),1);device.style.setProperty('--tilt',(14*(1-p)).toFixed(2)+'deg');device.style.setProperty('--sc',(.96+.04*p).toFixed(3))};settle();addEventListener('scroll',settle,{passive:true});
+  // Notifications arrive one by one while the window is visible
+  let k=0,timer;const tick=()=>{if(k===toasts.length){toasts.forEach(t=>t.classList.remove('on'));k=0;return}toasts[k++].classList.add('on')};
+  new IntersectionObserver(([e])=>{clearInterval(timer);if(e.isIntersecting){tick();timer=setInterval(tick,1600)}}).observe(device.parentElement);
+})();
+</script>
+</body></html>
